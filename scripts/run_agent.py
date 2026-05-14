@@ -6,7 +6,7 @@ from pathlib import Path
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY
+    "gemini-1.5-flash:generateContent?key=" + GEMINI_API_KEY
 )
  
 FEEDS = [
@@ -74,11 +74,17 @@ def fetch_feeds():
     if marker not in seen:
         print("New day — resetting seen hashes for fresh fetch")
         seen = {marker}
+    else:
+        # If we only have the marker + very few items, force a broader fetch
+        non_marker = [s for s in seen if not s.startswith("__date__")]
+        if len(non_marker) < 10:
+            print("Few seen items — expanding fetch window")
+            seen = {marker}
  
     for url in FEEDS:
         try:
             feed = feedparser.parse(url, request_headers={"User-Agent": "RayDarVice/2.0"})
-            for entry in feed.entries[:10]:
+            for entry in feed.entries[:15]:
                 title   = entry.get("title", "").strip()
                 link    = entry.get("link", "").strip()
                 summary = entry.get("summary", entry.get("description", ""))[:800]
@@ -191,7 +197,7 @@ ITEMS:
             return result
         except Exception as e:
             if "429" in str(e) and attempt < 2:
-                wait = 15 * (attempt + 1)
+                wait = 30 * (attempt + 1)
                 print(f"Rate limited — waiting {wait}s before retry {attempt+2}/3")
                 time.sleep(wait)
             else:
