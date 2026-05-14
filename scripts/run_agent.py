@@ -1,4 +1,4 @@
-import os, json, hashlib, re, requests, feedparser
+import os, json, hashlib, re, requests, feedparser, time
 from datetime import datetime, timezone, timedelta
 from jinja2 import Template
 from pathlib import Path
@@ -136,17 +136,13 @@ def safe_json(raw):
     return None
  
  
-def classify_items(items):
-    if not items:
-        print("No items to classify — check RSS feeds")
-        return []
- 
+def classify_batch(batch_items, all_items):
+    """Classify a single batch of items. Returns list of scored items."""
     batch = json.dumps(
         [{"index": i, "title": it["title"], "snippet": it["summary"][:400]}
-         for i, it in enumerate(items)],
+         for i, it in enumerate(batch_items)],
         ensure_ascii=False,
     )
- 
     prompt = f"""You are Raymond "Red" Vice — a sharp AI intelligence operator filing
 from Nick's Pizza, Espoo. You brief a Finnish business executive every morning on the
 AI valuechain. Write with calm confidence — you already knew this was going to happen.
@@ -158,9 +154,9 @@ The AI valuechain has five layers:
 - TOOLS:  developer frameworks, APIs, MLOps, fine-tuning platforms, open-source tooling
 - APPS:   enterprise deployments, vertical AI applications, notable product launches
  
-TASK: From the items below, select the TOP 5 by combined novelty x business impact (1-10).
+TASK: From the items below, select the TOP 3 by combined novelty x business impact (1-10).
 Score above 6 only if the item genuinely shifts competitive dynamics at some chain layer.
-If fewer than 5 items qualify, return however many do — never pad with weak items.
+If fewer than 3 items qualify, return however many do — never pad with weak items.
  
 For each selected item return EXACTLY this JSON structure:
 {{"chain_layer":"CHIPS|CLOUD|MODELS|TOOLS|APPS","chain_tag":"chips|cloud|models|tools|apps","score":7,"title":"Sharp headline max 90 chars","summary":"What happened. Two sharp sentences.","so_what":"Chain impact for a business reader. Two confident sentences.","url":"original url from input","source":"publication name"}}
@@ -170,36 +166,70 @@ Respond ONLY with a valid JSON array. No markdown fences, no preamble, no explan
 ITEMS:
 {batch}
 """
+    # Retry with backoff on 429
+    for attempt in range(3):
+        try:
+            raw = call_gemini(prompt)
+            result = safe_json(raw)
+            if not result or not isinstance(result, list):
+                return []
+            # Restore original URLs
+            for c in result:
+                original = next(
+                    (it for it in batch_items
+                     if it["title"][:35].lower() in c.get("title","").lower()
+                     or c.get("title","")[:35].lower() in it["title"].lower()),
+                    None,
+                )
+                if original:
+                    c["url"]    = original["url"]
+                    c["source"] = original["source"]
+                c["score"]     = max(1, min(10, int(c.get("score", 7))))
+                c["chain_tag"] = c.get("chain_tag", "models").lower()
+                if c["chain_tag"] not in ("chips","cloud","models","tools","apps"):
+                    c["chain_tag"] = "models"
+            return result
+        except Exception as e:
+            if "429" in str(e) and attempt < 2:
+                wait = 15 * (attempt + 1)
+                print(f"Rate limited — waiting {wait}s before retry {attempt+2}/3")
+                time.sleep(wait)
+            else:
+                print(f"Batch classification error: {e}")
+                return []
+    return []
  
-    try:
-        raw        = call_gemini(prompt)
-        classified = safe_json(raw)
-        if not classified or not isinstance(classified, list):
-            print("Gemini returned invalid structure")
-            return []
  
-        for c in classified:
-            original = next(
-                (it for it in items
-                 if it["title"][:35].lower() in c.get("title","").lower()
-                 or c.get("title","")[:35].lower() in it["title"].lower()),
-                None,
-            )
-            if original:
-                c["url"]    = original["url"]
-                c["source"] = original["source"]
-            c["score"]     = max(1, min(10, int(c.get("score", 7))))
-            c["chain_tag"] = c.get("chain_tag", "models").lower()
-            if c["chain_tag"] not in ("chips","cloud","models","tools","apps"):
-                c["chain_tag"] = "models"
- 
-        clean = [c for c in classified if check_paywall(c.get("url",""))]
-        print(f"Classified: {len(classified)} items, {len(clean)} paywall-free")
-        return clean[:5]
- 
-    except Exception as e:
-        print(f"Classification error: {e}")
+def classify_items(items):
+    if not items:
+        print("No items to classify — check RSS feeds")
         return []
+ 
+    BATCH_SIZE = 25
+    all_scored = []
+ 
+    chunks = [items[i:i+BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
+    print(f"Classifying {len(items)} items in {len(chunks)} batches of {BATCH_SIZE}")
+ 
+    for i, chunk in enumerate(chunks):
+        print(f"  Batch {i+1}/{len(chunks)} ({len(chunk)} items)...")
+        results = classify_batch(chunk, items)
+        all_scored.extend(results)
+        if i < len(chunks) - 1:
+            time.sleep(8)  # polite pause between batches
+ 
+    if not all_scored:
+        print("No items scored across all batches")
+        return []
+ 
+    # Sort by score descending, pick top 5
+    all_scored.sort(key=lambda x: x.get("score", 0), reverse=True)
+    top5 = all_scored[:5]
+ 
+    # Paywall filter
+    clean = [c for c in top5 if check_paywall(c.get("url",""))]
+    print(f"Final: {len(all_scored)} scored, top 5 selected, {len(clean)} paywall-free")
+    return clean
  
  
 def build_also_watching(today_items, history):
