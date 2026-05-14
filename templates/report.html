@@ -409,12 +409,19 @@
 
   /* ── FOOTER ── */
   .page-footer {
-    text-align:center;
-    padding:28px 20px;
-    font-size:10px;
-    letter-spacing:0.15em;
-    color:rgba(255,255,255,0.18);
-    border-top:1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    padding: 32px 20px 28px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.55);
+    border-top: 1px solid rgba(0,229,255,0.15);
+    background: linear-gradient(180deg, transparent 0%, rgba(0,229,255,0.03) 100%);
+    text-shadow: 0 0 20px rgba(0,229,255,0.3);
+  }
+  .page-footer .cobhc {
+    color: var(--neon-pink);
+    text-shadow: 0 0 12px rgba(255,45,120,0.6);
+    letter-spacing: 0.2em;
   }
 
   /* Loading */
@@ -437,6 +444,90 @@
   }
   @keyframes spin { to { transform:rotate(360deg); } }
 
+
+  /* ── FILTER BAR ── */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+  .filter-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 5px 14px;
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: transparent;
+    color: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: all 0.15s;
+    text-transform: uppercase;
+  }
+  .filter-btn:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+  .filter-btn.active {
+    background: rgba(0,229,255,0.12);
+    color: var(--neon-cyan);
+    border-color: rgba(0,229,255,0.5);
+    box-shadow: 0 0 10px rgba(0,229,255,0.15);
+  }
+  .filter-btn.active.f-chips  { background:rgba(255,109,0,0.12); color:var(--chips);  border-color:rgba(255,109,0,0.4); }
+  .filter-btn.active.f-cloud  { background:rgba(0,229,255,0.12); color:var(--cloud);  border-color:rgba(0,229,255,0.4); }
+  .filter-btn.active.f-models { background:rgba(255,45,120,0.12);color:var(--models); border-color:rgba(255,45,120,0.4); }
+  .filter-btn.active.f-tools  { background:rgba(118,255,3,0.12); color:var(--tools);  border-color:rgba(118,255,3,0.4); }
+  .filter-btn.active.f-apps   { background:rgba(191,95,255,0.12);color:var(--apps);   border-color:rgba(191,95,255,0.4); }
+
+  /* ── ALSO WATCHING ── */
+  .watching-card {
+    background: rgba(10,13,36,0.6);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-left: 3px solid rgba(191,95,255,0.5);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    transition: border-color 0.2s;
+  }
+  .watching-card:hover { border-left-color: var(--neon-purple); }
+  .watching-icon { color: var(--neon-purple); font-size: 11px; letter-spacing:0.1em; flex-shrink:0; margin-top:2px; }
+  .watching-title { font-family:'Oswald',sans-serif; font-size:13px; font-weight:600; color:rgba(255,255,255,0.7); }
+  .watching-title a { color:inherit; text-decoration:none; }
+  .watching-title a:hover { color:var(--neon-purple); }
+  .watching-meta { font-size:10px; color:var(--muted); margin-top:3px; letter-spacing:0.08em; }
+
+  /* ── WEEKLY SYNTHESIS ── */
+  .synthesis-card {
+    background: linear-gradient(135deg, rgba(191,95,255,0.07) 0%, rgba(0,229,255,0.05) 100%);
+    border: 1px solid rgba(191,95,255,0.25);
+    border-left: 3px solid var(--neon-purple);
+    padding: 22px 24px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .synthesis-card::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; height:1px;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-cyan), transparent);
+    opacity: 0.5;
+  }
+  .synthesis-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--neon-purple);
+    margin-bottom: 12px;
+  }
+  .synthesis-text {
+    font-size: 13px;
+    line-height: 1.75;
+    color: rgba(232,234,246,0.85);
+    font-style: italic;
+  }
   @media (max-width:600px) {
     .ops-grid { grid-template-columns:1fr; }
     .title-raydar { font-size:64px; }
@@ -473,17 +564,34 @@
 <div class="date-bar">
   <span>&#9632; RADAR CONTACT: {{ report_date }}</span>
   <span>{{ item_count }} SIGNALS ACQUIRED</span>
-  <span>NICK'S PIZZA INTELLIGENCE DIVISION</span>
+  <span>NICK'S PIZZA, ESPOO</span>
 </div>
 
 <!-- ══ CONTENT ══ -->
 <div class="container">
 
+  {% if weekly_synthesis %}
+  <div class="synthesis-card">
+    <div class="synthesis-label">&#9670; MONDAY INTELLIGENCE SUMMARY</div>
+    <div class="synthesis-text">{{ weekly_synthesis }}</div>
+  </div>
+  {% endif %}
+
   <div class="section-label">RADAR CONTACT</div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterCards('all', this)">ALL SIGNALS</button>
+    <button class="filter-btn f-chips"  onclick="filterCards('chips', this)">CHIPS</button>
+    <button class="filter-btn f-cloud"  onclick="filterCards('cloud', this)">CLOUD</button>
+    <button class="filter-btn f-models" onclick="filterCards('models', this)">MODELS</button>
+    <button class="filter-btn f-tools"  onclick="filterCards('tools', this)">TOOLS</button>
+    <button class="filter-btn f-apps"   onclick="filterCards('apps', this)">APPS</button>
+  </div>
 
   {% if items %}
     {% for item in items %}
-    <div class="news-card">
+    <div class="news-card" data-chain="{{ item.chain_tag }}">
       <div class="card-meta">
         <span class="chain-tag tag-{{ item.chain_tag }}">{{ item.chain_layer }}</span>
         <span class="heat-score">SIGNAL <span>{{ item.score }}/10</span></span>
@@ -508,6 +616,24 @@
     </div>
   {% endif %}
 
+  <!-- ALSO WATCHING -->
+  {% if also_watching %}
+  <div style="margin-top:36px;">
+    <div class="section-label">ALSO WATCHING</div>
+    {% for item in also_watching %}
+    <div class="watching-card">
+      <div class="watching-icon">&#9632; YESTERDAY</div>
+      <div>
+        <div class="watching-title">
+          <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+        </div>
+        <div class="watching-meta">{{ item.chain_layer }} &nbsp;·&nbsp; SIGNAL {{ item.score }}/10 &nbsp;·&nbsp; {{ item.source }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <!-- OTHER OPERATIONS -->
   <div class="ops-section">
     <div class="section-label">OTHER OPERATIONS</div>
@@ -528,9 +654,27 @@
 </div>
 
 <!-- FOOTER -->
+<div style="height:1px; background:linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), var(--neon-purple), transparent); opacity:0.4;"></div>
 <div class="page-footer">
-  RAYDAR VICE &nbsp;&middot;&nbsp; AI NEWS INTELLIGENCE &nbsp;&middot;&nbsp; NICK'S PIZZA INTELLIGENCE DIVISION, ESPOO &nbsp;&middot;&nbsp; POWERED BY GEMINI FLASH
+  RAYDAR VICE &nbsp;&middot;&nbsp; AI NEWS INTELLIGENCE &nbsp;&middot;&nbsp; NICK'S PIZZA, ESPOO &nbsp;&middot;&nbsp; ENERGIZED BY <span class="cobhc">COBHC</span>
 </div>
 
+
+<script>
+function filterCards(layer, btn) {
+  // Update active button
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // Show/hide cards
+  document.querySelectorAll('.news-card').forEach(card => {
+    if (layer === 'all' || card.dataset.chain === layer) {
+      card.style.display = '';
+      card.style.animation = 'fadeup 0.3s ease-out';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
 </body>
 </html>
