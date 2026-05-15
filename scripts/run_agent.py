@@ -6,7 +6,7 @@ from pathlib import Path
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.0-flash-lite:generateContent?key=" + GEMINI_API_KEY
+    "gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY
 )
  
 FEEDS = [
@@ -71,15 +71,12 @@ def fetch_feeds():
     # Reset seen hashes daily so fresh content always comes through
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     marker = f"__date__{today}"
+    # Always reset on a new day — no exceptions
     if marker not in seen:
         print("New day — resetting seen hashes for fresh fetch")
-        seen = {marker}
     else:
-        # If we only have the marker + very few items, force a broader fetch
-        non_marker = [s for s in seen if not s.startswith("__date__")]
-        if len(non_marker) < 10:
-            print("Few seen items — expanding fetch window")
-            seen = {marker}
+        print("Same day re-run — still resetting for maximum fresh content")
+    seen = {marker}  # always start fresh
  
     for url in FEEDS:
         try:
