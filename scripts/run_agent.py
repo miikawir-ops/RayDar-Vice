@@ -6,7 +6,7 @@ from pathlib import Path
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-1.5-flash:generateContent?key=" + GEMINI_API_KEY
+    "gemini-2.0-flash-lite:generateContent?key=" + GEMINI_API_KEY
 )
  
 FEEDS = [
@@ -211,7 +211,7 @@ def classify_items(items):
         print("No items to classify — check RSS feeds")
         return []
  
-    BATCH_SIZE = 25
+    BATCH_SIZE = 15
     all_scored = []
  
     chunks = [items[i:i+BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
@@ -222,7 +222,7 @@ def classify_items(items):
         results = classify_batch(chunk, items)
         all_scored.extend(results)
         if i < len(chunks) - 1:
-            time.sleep(8)  # polite pause between batches
+            time.sleep(30)  # polite pause between batches to avoid rate limits
  
     if not all_scored:
         print("No items scored across all batches")
