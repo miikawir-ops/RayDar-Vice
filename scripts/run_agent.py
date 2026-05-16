@@ -2,12 +2,11 @@ import os, json, hashlib, re, requests, feedparser, time
 from datetime import datetime, timezone, timedelta
 from jinja2 import Template
 from pathlib import Path
+from google import genai
  
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-GEMINI_MODEL  = "gemini-2.5-flash"
- 
-from google import genai
-gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+GEMINI_MODEL   = "gemini-2.5-flash"
+gemini_client  = genai.Client(api_key=GEMINI_API_KEY)
  
 FEEDS = [
     "https://huggingface.co/blog/feed.xml",
@@ -317,4 +316,3 @@ if __name__ == "__main__":
     save_history(history)
  
     render_html(final_items, also_watching, weekly_synthesis)
- 
