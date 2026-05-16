@@ -114,11 +114,16 @@ def check_paywall(url):
  
  
 def call_gemini(prompt, max_tokens=2500):
-    response = gemini_client.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=prompt
-    )
-    return response.text
+    try:
+        response = gemini_client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=prompt,
+            config={"temperature": 0.3, "max_output_tokens": max_tokens}
+        )
+        return response.text
+    except Exception as e:
+        print(f"Gemini call error: {e}")
+        raise
  
  
 def safe_json(raw):
