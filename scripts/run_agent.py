@@ -5,7 +5,7 @@ from pathlib import Path
 from google import genai
  
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-GEMINI_MODEL   = "gemini-2.5-flash"
+GEMINI_MODEL   = "gemini-2.0-flash"
 gemini_client  = genai.Client(api_key=GEMINI_API_KEY)
  
 FEEDS = [
