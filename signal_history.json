@@ -9,57 +9,6 @@
   },
   {
     "date": "2026-05-16",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "100 RL-Controlled AVs Smooth Highway Traffic in Real-World Deployment",
-        "summary": "A deployment of 100 reinforcement learning-controlled cars successfully smoothed rush-hour highway congestion, significantly reducing 'stop-and-go' waves and fuel consumption. This large-scale experiment validated RL's effectiveness in optimizing complex real-world infrastructure.",
-        "so_what": "This demonstrates the mature capability of AI for critical infrastructure, paving the way for widespread adoption in smart cities and autonomous vehicle integration. Businesses in logistics, automotive, and urban planning can leverage these proven efficiencies for substantial cost savings and environmental benefits.",
-        "url": null,
-        "source": null
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 9,
-        "title": "GPT-5.5 Emerges, Databricks Unleashes for Enterprise Agents",
-        "summary": "A new 'GPT-5.5' model has reportedly set a new state-of-the-art on the OfficeQA Pro benchmark, signaling a significant leap in AI capabilities. Databricks is already integrating this powerful model to enhance enterprise agent workflows, leveraging its advanced reasoning for complex business tasks.",
-        "so_what": "The introduction of a new SOTA model like GPT-5.5 fundamentally elevates the bar for foundation models, increasing pressure on competitors to match or exceed performance. Its rapid deployment by Databricks means businesses can immediately tap into next-generation AI agents, accelerating automation and decision-making across enterprise operations.",
-        "url": null,
-        "source": "Databricks"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "ChatGPT Enters Personal Finance, Directly Connecting Accounts",
-        "summary": "ChatGPT is previewing a new personal finance experience for U.S. Pro users, allowing secure connection of financial accounts. This feature provides AI-powered insights and guidance tailored to individual financial contexts, goals, and priorities.",
-        "so_what": "This move positions ChatGPT as a direct competitor to traditional fintech platforms and financial advisory services, marking a significant expansion beyond general chat capabilities. It signals a critical shift in how consumers may manage their finances, demanding new strategies from incumbents in the personal finance sector.",
-        "url": null,
-        "source": "OpenAI"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 9,
-        "title": "Cerebras IPO Soars 108% After $5.5B Raise, Signaling Major Shift in AI Chip Market",
-        "summary": "Cerebras, an AI hardware company, has achieved a massive $5.5 billion funding round followed by a 108% stock pop in its IPO. This event marks a significant milestone, especially given prior skepticism about the company's prospects.",
-        "so_what": "This groundbreaking IPO provides immense capital and market validation for a specialized AI chip contender, genuinely shifting competitive dynamics in the CHIPS layer. It signals that the market is ready for alternatives or complementary solutions to dominant players like NVIDIA, fostering a more diverse hardware ecosystem.",
-        "url": "N/A",
-        "source": "N/A"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "NVIDIA Introduces Nemotron 3 Nano Omni for Long-Context Multimodal AI Agents",
-        "summary": "NVIDIA has unveiled Nemotron 3 Nano Omni, a new multimodal intelligence model focusing on long-context processing for AI agents. This model integrates capabilities across documents, audio, and video, targeting complex agentic applications.",
-        "so_what": "This strategic release from NVIDIA strengthens its comprehensive AI platform, offering businesses advanced, integrated multimodal capabilities directly tied to their ecosystem. It enables the development of sophisticated AI agents capable of understanding and interacting with diverse data types at scale, pushing the boundaries of enterprise automation.",
-        "url": null,
-        "source": null
-      }
-    ]
+    "items": []
   }
 ]
