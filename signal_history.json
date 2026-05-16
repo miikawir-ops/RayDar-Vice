@@ -6,5 +6,20 @@
   {
     "date": "2026-05-15",
     "items": []
+  },
+  {
+    "date": "2026-05-16",
+    "items": [
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 7,
+        "title": "GitHub Game Sharpens Agentic AI Security Skills",
+        "summary": "GitHub has launched a free, open-source game to help developers identify and exploit agentic AI vulnerabilities. Over 10,000 developers have already used this tool to enhance their AI security expertise.",
+        "so_what": "As businesses increasingly deploy agentic AI, understanding and mitigating security risks is paramount for trust and adoption. This initiative from GitHub helps close a critical skills gap, enabling more secure and robust AI application development.",
+        "url": "",
+        "source": "The GitHub Blog"
+      }
+    ]
   }
 ]
