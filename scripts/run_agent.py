@@ -4,10 +4,10 @@ from jinja2 import Template
 from pathlib import Path
  
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-GEMINI_URL = (
-    "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY
-)
+GEMINI_MODEL  = "gemini-2.5-flash"
+ 
+from google import genai
+gemini_client = genai.Client(api_key=GEMINI_API_KEY)
  
 FEEDS = [
     "https://huggingface.co/blog/feed.xml",
@@ -115,13 +115,11 @@ def check_paywall(url):
  
  
 def call_gemini(prompt, max_tokens=2500):
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.3, "maxOutputTokens": max_tokens},
-    }
-    r = requests.post(GEMINI_URL, json=payload, timeout=90)
-    r.raise_for_status()
-    return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+    response = gemini_client.models.generate_content(
+        model=GEMINI_MODEL,
+        contents=prompt
+    )
+    return response.text
  
  
 def safe_json(raw):
@@ -319,3 +317,4 @@ if __name__ == "__main__":
     save_history(history)
  
     render_html(final_items, also_watching, weekly_synthesis)
+ 
