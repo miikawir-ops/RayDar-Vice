@@ -21,6 +21,12 @@ jobs:
       - name: Install dependencies
         run: pip install requests feedparser jinja2 google-genai==1.10.0
  
+      - name: Test import
+        run: |
+          python -c "from google import genai; print('genai import OK')"
+          python -c "import feedparser; print('feedparser OK')"
+          python -c "import jinja2; print('jinja2 OK')"
+ 
       - name: Run agent
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
