@@ -286,7 +286,7 @@ def classify_items(items):
         relevant = items[:20]  # fallback
  
     # Take top 20 by title length as proxy for substance
-    relevant = sorted(relevant, key=lambda x: len(x["title"]+x["summary"]), reverse=True)[:20]
+    relevant = sorted(relevant, key=lambda x: len(x["title"]+x["summary"]), reverse=True)[:10]
  
     print(f"Classifying {len(relevant)} pre-filtered items in 1 batch (1 API call)")
     results = classify_batch(relevant, relevant)
@@ -296,7 +296,7 @@ def classify_items(items):
         return []
  
     results.sort(key=lambda x: x.get("score", 0), reverse=True)
-    clean = [c for c in results[:5] if check_paywall(c.get("url",""))]
+    clean = results[:5]  # paywall check disabled — was dropping valid articles
     print(f"Final: {len(results)} scored, {len(clean)} paywall-free signals")
     return clean
  
