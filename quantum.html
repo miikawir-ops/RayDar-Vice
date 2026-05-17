@@ -421,67 +421,110 @@ function drawSlit() {
   slitCtx.fillStyle = 'rgba(7,9,26,0.18)';
   slitCtx.fillRect(0,0,W,H);
 
-  // Fire a new particle occasionally
-  if (Math.random() < 0.35) {
-    const angle = observed
-      ? (Math.random() < 0.5 ? -0.15 : 0.15) + (Math.random()-0.5)*0.08
-      : (Math.random()-0.5) * Math.PI * 0.55;
+  const bx = W * 0.42;
+  const screenX = W * 0.82;
+  const slit1Top = H*0.3, slit1Bot = H*0.44;
+  const slit2Top = H*0.56, slit2Bot = H*0.7;
+
+  // Fire particles through slits
+  if (Math.random() < 0.5) {
+    // Pick a slit
+    const useSlit1 = Math.random() < 0.5;
+    const slitY = useSlit1
+      ? slit1Top + Math.random()*(slit1Bot-slit1Top)
+      : slit2Top + Math.random()*(slit2Bot-slit2Top);
+
+    let targetY;
+    if (observed) {
+      // Particle — lands near slit center
+      targetY = slitY + (Math.random()-0.5)*H*0.15;
+    } else {
+      // Wave — interference pattern: bright bands
+      const bands = [-0.32,-0.18,-0.04,0.04,0.18,0.32];
+      const band = bands[Math.floor(Math.random()*bands.length)];
+      targetY = H*0.5 + band*H + (Math.random()-0.5)*H*0.06;
+    }
+
     slitParticles.push({
-      x: W*0.18, y: H*0.5,
-      vx: 2.8 + Math.random(),
-      vy: Math.sin(angle) * 2.5,
-      life: 1, age: 0
+      x: W*0.12, y: H*0.5,
+      tx: screenX, ty: targetY,
+      progress: 0,
+      slitY: slitY,
+      done: false
     });
   }
 
   // Draw barrier
-  const bx = W * 0.38;
-  slitCtx.strokeStyle = 'rgba(0,229,255,0.5)';
+  slitCtx.strokeStyle = 'rgba(0,229,255,0.6)';
   slitCtx.lineWidth = 3;
-  slitCtx.beginPath(); slitCtx.moveTo(bx, 0); slitCtx.lineTo(bx, H*0.38); slitCtx.stroke();
-  slitCtx.beginPath(); slitCtx.moveTo(bx, H*0.44); slitCtx.lineTo(bx, H*0.56); slitCtx.stroke();
-  slitCtx.beginPath(); slitCtx.moveTo(bx, H*0.62); slitCtx.lineTo(bx, H); slitCtx.stroke();
+  // Top solid
+  slitCtx.beginPath(); slitCtx.moveTo(bx,0); slitCtx.lineTo(bx,slit1Top); slitCtx.stroke();
+  // Between slits
+  slitCtx.beginPath(); slitCtx.moveTo(bx,slit1Bot); slitCtx.lineTo(bx,slit2Top); slitCtx.stroke();
+  // Bottom solid
+  slitCtx.beginPath(); slitCtx.moveTo(bx,slit2Bot); slitCtx.lineTo(bx,H); slitCtx.stroke();
+
+  // Slit gap glow
+  slitCtx.strokeStyle = 'rgba(0,229,255,0.15)';
+  slitCtx.lineWidth = 1;
+  slitCtx.beginPath(); slitCtx.moveTo(bx,slit1Top); slitCtx.lineTo(bx,slit1Bot); slitCtx.stroke();
+  slitCtx.beginPath(); slitCtx.moveTo(bx,slit2Top); slitCtx.lineTo(bx,slit2Bot); slitCtx.stroke();
+
+  // Screen line
+  slitCtx.strokeStyle = 'rgba(255,255,255,0.15)';
+  slitCtx.lineWidth = 2;
+  slitCtx.beginPath(); slitCtx.moveTo(screenX,0); slitCtx.lineTo(screenX,H); slitCtx.stroke();
 
   // Update & draw particles
   slitParticles = slitParticles.filter(p => {
-    p.x += p.vx; p.y += p.vy; p.age++;
-    if (p.x > W*0.85 && p.age > 10) {
-      const idx = Math.floor(p.y);
-      if (idx >= 0 && idx < slitPattern.length) slitPattern[idx] = Math.min(slitPattern[idx] + 1, 60);
+    p.progress += 0.03;
+    if (p.progress >= 1) {
+      // Hit screen — add to pattern
+      const idx = Math.min(Math.floor(p.ty), slitPattern.length-1);
+      if (idx >= 0) slitPattern[idx] = Math.min(slitPattern[idx]+1, 80);
       return false;
     }
-    const alpha = Math.max(0, 1 - p.age/60);
+
+    // Curved path: source -> slit -> screen
+    let cx, cy;
+    if (p.progress < 0.5) {
+      const t = p.progress * 2;
+      cx = p.x + (bx - p.x) * t;
+      cy = p.y + (p.slitY - p.y) * t;
+    } else {
+      const t = (p.progress - 0.5) * 2;
+      cx = bx + (p.tx - bx) * t;
+      cy = p.slitY + (p.ty - p.slitY) * t;
+    }
+
+    const alpha = 0.8;
+    const color = observed ? `rgba(255,45,120,${alpha})` : `rgba(0,229,255,${alpha})`;
     slitCtx.beginPath();
-    slitCtx.arc(p.x, p.y, 2, 0, Math.PI*2);
-    slitCtx.fillStyle = observed
-      ? `rgba(255,45,120,${alpha})`
-      : `rgba(0,229,255,${alpha})`;
-    slitCtx.fill();
-    slitCtx.shadowBlur = 6;
+    slitCtx.arc(cx, cy, 2.5, 0, Math.PI*2);
+    slitCtx.fillStyle = color;
+    slitCtx.shadowBlur = 8;
     slitCtx.shadowColor = observed ? '#ff2d78' : '#00e5ff';
     slitCtx.fill();
     slitCtx.shadowBlur = 0;
-    return p.x < W && p.age < 80;
+    return true;
   });
 
-  // Draw accumulation pattern
-  const screenX = W * 0.88;
+  // Draw accumulation pattern on screen
   for (let y = 0; y < slitPattern.length; y++) {
     if (slitPattern[y] > 0) {
-      const intensity = Math.min(slitPattern[y] / 50, 1);
-      slitCtx.fillStyle = observed
-        ? `rgba(255,45,120,${intensity * 0.9})`
-        : `rgba(0,229,255,${intensity * 0.9})`;
-      slitCtx.fillRect(screenX, y, W*0.1 * intensity, 1);
+      const intensity = Math.min(slitPattern[y] / 60, 1);
+      const color = observed ? `rgba(255,45,120,${intensity})` : `rgba(0,229,255,${intensity})`;
+      slitCtx.fillStyle = color;
+      slitCtx.fillRect(screenX+2, y, W*0.12 * intensity, 1);
     }
   }
 
   // Labels
   slitCtx.font = '10px "Share Tech Mono"';
   slitCtx.fillStyle = 'rgba(0,229,255,0.4)';
-  slitCtx.fillText('SOURCE', W*0.04, H*0.5 - 8);
-  slitCtx.fillText('BARRIER', bx - 30, 12);
-  slitCtx.fillText('SCREEN', screenX - 4, 12);
+  slitCtx.fillText('SOURCE', W*0.02, H*0.5-8);
+  slitCtx.fillText('SLITS', bx-18, 14);
+  slitCtx.fillText('SCREEN', screenX+4, 14);
 
   slitAnim = requestAnimationFrame(drawSlit);
 }
