@@ -13,27 +13,6 @@
   },
   {
     "date": "2026-05-17",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 9,
-        "title": "DeepSeek-V4 Unlocks Million-Token Context for Practical AI Agents",
-        "summary": "DeepSeek has released DeepSeek-V4, a new foundation model boasting a million-token context window designed for practical use by AI agents. This release focuses on making long-context capabilities genuinely usable, addressing common challenges with coherence and performance.",
-        "so_what": "This breakthrough significantly enhances the operational capacity of AI agents, allowing businesses to tackle complex tasks requiring vast information processing. It shifts competitive dynamics by setting a new standard for agentic model usability, enabling novel applications in data analysis, automation, and decision support.",
-        "url": "null",
-        "source": "DeepSeek AI Blog"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 9,
-        "title": "New Defenses Counter LLM Prompt Injection, Boosting Enterprise Security",
-        "summary": "Prompt injection remains the top threat to LLM applications. New techniques, Structured Queries (StruQ) and Preference Optimization (SecAlign), offer robust defenses against these critical vulnerabilities.",
-        "so_what": "This directly addresses a major barrier to enterprise LLM adoption, making AI applications significantly more secure and trustworthy. Businesses can now deploy LLM-integrated solutions with greater confidence, accelerating AI transformation.",
-        "url": null,
-        "source": null
-      }
-    ]
+    "items": []
   }
 ]
