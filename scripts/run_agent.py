@@ -132,15 +132,23 @@ def call_gemini(prompt, max_tokens=2500):
  
 def safe_json(raw):
     raw = re.sub(r"```json|```", "", raw).strip()
+    # Try full parse first
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
-        m = re.search(r"(\[.*\]|\{.*\})", raw, re.DOTALL)
-        if m:
-            try:
-                return json.loads(m.group(1))
-            except Exception:
-                pass
+        pass
+    # Try extracting complete JSON objects from a truncated array
+    objects = []
+    for m in re.finditer(r'\{[^{}]*\}', raw, re.DOTALL):
+        try:
+            obj = json.loads(m.group(0))
+            if "chain_layer" in obj and "title" in obj:
+                objects.append(obj)
+        except Exception:
+            pass
+    if objects:
+        print(f"Recovered {len(objects)} objects from truncated JSON")
+        return objects
     print(f"JSON parse failed. Raw:\n{raw[:500]}")
     return None
  
@@ -178,7 +186,7 @@ ITEMS:
     # Retry with backoff on 429
     for attempt in range(3):
         try:
-            raw = call_gemini(prompt)
+            raw = call_gemini(prompt, max_tokens=4000)
             result = safe_json(raw)
             if not result or not isinstance(result, list):
                 return []
