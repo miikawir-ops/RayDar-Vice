@@ -137,19 +137,38 @@ def safe_json(raw):
         return json.loads(raw)
     except json.JSONDecodeError:
         pass
-    # Try extracting complete JSON objects from a truncated array
+    # Try closing a truncated array by finding last complete object
+    try:
+        last_brace = raw.rfind('},')
+        if last_brace > 0:
+            trimmed = raw[:last_brace+1] + ']'
+            result = json.loads(trimmed)
+            print(f"Recovered {len(result)} objects by trimming truncated JSON")
+            return result
+    except Exception:
+        pass
+    # Last resort: extract individual complete objects
     objects = []
-    for m in re.finditer(r'\{[^{}]*\}', raw, re.DOTALL):
-        try:
-            obj = json.loads(m.group(0))
-            if "chain_layer" in obj and "title" in obj:
-                objects.append(obj)
-        except Exception:
-            pass
+    depth = 0
+    start = -1
+    for i, ch in enumerate(raw):
+        if ch == '{':
+            if depth == 0: start = i
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0 and start >= 0:
+                try:
+                    obj = json.loads(raw[start:i+1])
+                    if "chain_layer" in obj and "title" in obj:
+                        objects.append(obj)
+                except Exception:
+                    pass
+                start = -1
     if objects:
         print(f"Recovered {len(objects)} objects from truncated JSON")
         return objects
-    print(f"JSON parse failed. Raw:\n{raw[:500]}")
+    print(f"JSON parse failed. Raw:\n{raw[:300]}")
     return None
  
  
@@ -175,10 +194,10 @@ TASK: From the items below, select the TOP 3 by combined novelty x business impa
 Score above 6 only if the item genuinely shifts competitive dynamics at some chain layer.
 If fewer than 3 items qualify, return however many do — never pad with weak items.
  
-For each selected item return EXACTLY this JSON structure:
-{{"chain_layer":"CHIPS|CLOUD|MODELS|TOOLS|APPS","chain_tag":"chips|cloud|models|tools|apps","score":7,"title":"Sharp headline max 90 chars","summary":"What happened. Two sharp sentences.","so_what":"Chain impact for a business reader. Two confident sentences.","url":"original url from input","source":"publication name"}}
+For each selected item return EXACTLY this JSON structure — keep all text fields SHORT (max 120 chars each):
+{{"chain_layer":"CHIPS|CLOUD|MODELS|TOOLS|APPS","chain_tag":"chips|cloud|models|tools|apps","score":7,"title":"max 80 chars","summary":"One sharp sentence max 120 chars.","so_what":"One sentence chain impact max 120 chars.","url":"url","source":"name"}}
  
-Respond ONLY with a valid JSON array. No markdown fences, no preamble, no explanation.
+Respond ONLY with a valid JSON array. No markdown, no preamble, no trailing text after the final bracket.
  
 ITEMS:
 {batch}
