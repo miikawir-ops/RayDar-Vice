@@ -13,6 +13,37 @@
   },
   {
     "date": "2026-05-17",
-    "items": []
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "Railway raises $100M to challenge AWS with AI-native cloud",
+        "summary": "Railway secured $100M to build AI-native cloud infrastructure, attracting 2M developers without marketing.",
+        "so_what": "This well-funded startup directly challenges hyperscalers by offering specialized, potentially more efficient AI compute.",
+        "url": "url",
+        "source": "name"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Salesforce's new Slackbot AI agent battles Microsoft & Google",
+        "summary": "Salesforce rebuilt Slackbot into a full AI agent for enterprise data search, drafting, and action, now generally available.",
+        "so_what": "A major enterprise player intensifies competition in workplace AI, raising the bar for integrated AI agent capabilities.",
+        "url": "url",
+        "source": "name"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Anthropic launches Cowork: Claude Desktop agent for non-coders",
+        "summary": "Anthropic's Cowork extends Claude Code's power to non-technical users, allowing file interaction without coding.",
+        "so_what": "This broadens AI agent adoption beyond developers, significantly expanding the market for mainstream AI applications.",
+        "url": "url",
+        "source": "name"
+      }
+    ]
   }
 ]

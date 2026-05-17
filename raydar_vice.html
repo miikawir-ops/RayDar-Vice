@@ -604,9 +604,40 @@
     background: rgba(191,95,255,0.1);
     border-color: var(--neon-purple);
   }
-  @media (max-width:600px) {
+  @media (max-width:768px) {
     .ops-grid { grid-template-columns:1fr; }
     .title-raydar { font-size:64px; }
+    .container { padding: 20px 14px 48px; }
+    .hero { padding-bottom: 0; }
+    .hero-img-wrap { width: clamp(240px, 85vw, 400px); }
+    .date-bar { font-size: 9px; padding: 6px 12px; gap: 6px; }
+    .news-card { padding: 14px 14px; }
+    .card-headline { font-size: 15px; }
+    .card-what { font-size: 12px; }
+    .card-so-what { font-size: 11px; }
+    .filter-bar { gap: 6px; }
+    .filter-btn { font-size: 9px; padding: 4px 10px; }
+    .section-label { font-size: 11px; }
+    .callsign-badge { font-size: 9px; padding: 3px 7px; }
+    .synthesis-card { padding: 16px 14px; }
+    .synthesis-text { font-size: 12px; }
+    .quantum-card { padding: 16px 14px; }
+    .quantum-insight { font-size: 12px; }
+    .watching-card { padding: 10px 14px; }
+    .page-footer { font-size: 9px; letter-spacing: 0.1em; padding: 20px 12px; }
+  }
+  @media (max-width:480px) {
+    .title-raydar { font-size: 48px; }
+    .title-sub { font-size: 10px; letter-spacing: 0.25em; }
+    .agent-name { font-size: 16px; letter-spacing: 0.2em; }
+    .reddington-credit { font-size: 9px; }
+    .hifi-badge { display: none; }
+    .hero-img-wrap { width: clamp(220px, 92vw, 360px); }
+    .card-meta { gap: 6px; }
+    .chain-tag { font-size: 8px; padding: 2px 7px; }
+    .ops-card-name { font-size: 12px; }
+    .ops-card-desc { font-size: 10px; }
+    .heat-bar { gap: 2px; }
   }
 </style>
 </head>
@@ -637,8 +668,8 @@
 
 <!-- ══ FREQ BAR ══ -->
 <div class="date-bar">
-  <span>&#9632; RADAR CONTACT: Sunday, May 17 2026 · 18:41 UTC</span>
-  <span>0 SIGNALS ACQUIRED</span>
+  <span>&#9632; RADAR CONTACT: Sunday, May 17 2026 · 19:04 UTC</span>
+  <span>3 SIGNALS ACQUIRED</span>
   <span>NICK'S PIZZA, ESPOO</span>
 </div>
 
@@ -662,10 +693,115 @@
   </div>
 
   
-    <div class="loading-card">
-      <div class="spinner"></div>
-      AWAITING RADAR CONTACT...
+    
+    <div class="news-card" data-chain="cloud">
+      <div class="card-meta">
+        <span class="chain-tag tag-cloud">CLOUD</span>
+        <span class="heat-score">SIGNAL <span>8/10</span></span>
+        <span class="card-source">name</span>
+      </div>
+      <div class="card-headline">
+        <a href="url" target="_blank" rel="noopener">Railway raises $100M to challenge AWS with AI-native cloud</a>
+      </div>
+      <div class="card-what">Railway secured $100M to build AI-native cloud infrastructure, attracting 2M developers without marketing.</div>
+      <div class="card-so-what"><strong>CHAIN IMPACT &mdash;</strong> This well-funded startup directly challenges hyperscalers by offering specialized, potentially more efficient AI compute.</div>
+      <div class="heat-bar">
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip "></div>
+        
+        <div class="heat-pip "></div>
+        
+      </div>
     </div>
+    
+    <div class="news-card" data-chain="apps">
+      <div class="card-meta">
+        <span class="chain-tag tag-apps">APPS</span>
+        <span class="heat-score">SIGNAL <span>8/10</span></span>
+        <span class="card-source">name</span>
+      </div>
+      <div class="card-headline">
+        <a href="url" target="_blank" rel="noopener">Salesforce's new Slackbot AI agent battles Microsoft & Google</a>
+      </div>
+      <div class="card-what">Salesforce rebuilt Slackbot into a full AI agent for enterprise data search, drafting, and action, now generally available.</div>
+      <div class="card-so-what"><strong>CHAIN IMPACT &mdash;</strong> A major enterprise player intensifies competition in workplace AI, raising the bar for integrated AI agent capabilities.</div>
+      <div class="heat-bar">
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip "></div>
+        
+        <div class="heat-pip "></div>
+        
+      </div>
+    </div>
+    
+    <div class="news-card" data-chain="apps">
+      <div class="card-meta">
+        <span class="chain-tag tag-apps">APPS</span>
+        <span class="heat-score">SIGNAL <span>8/10</span></span>
+        <span class="card-source">name</span>
+      </div>
+      <div class="card-headline">
+        <a href="url" target="_blank" rel="noopener">Anthropic launches Cowork: Claude Desktop agent for non-coders</a>
+      </div>
+      <div class="card-what">Anthropic's Cowork extends Claude Code's power to non-technical users, allowing file interaction without coding.</div>
+      <div class="card-so-what"><strong>CHAIN IMPACT &mdash;</strong> This broadens AI agent adoption beyond developers, significantly expanding the market for mainstream AI applications.</div>
+      <div class="heat-bar">
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip on"></div>
+        
+        <div class="heat-pip "></div>
+        
+        <div class="heat-pip "></div>
+        
+      </div>
+    </div>
+    
   
 
   <!-- ALSO WATCHING -->
