@@ -528,6 +528,82 @@
     color: rgba(232,234,246,0.85);
     font-style: italic;
   }
+
+  /* ── QUANTUM OF THE DAY ── */
+  .quantum-card {
+    background: linear-gradient(135deg, rgba(7,9,26,0.95) 0%, rgba(13,16,48,0.95) 100%);
+    border: 1px solid rgba(191,95,255,0.3);
+    border-left: 3px solid var(--neon-purple);
+    padding: 22px 24px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .quantum-card::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; height:1px;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-cyan), transparent);
+    opacity: 0.6;
+  }
+  .quantum-card::after {
+    content: 'ψ';
+    position: absolute;
+    right: 20px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 80px;
+    color: rgba(191,95,255,0.06);
+    font-family: 'Bebas Neue', sans-serif;
+    pointer-events: none;
+  }
+  .quantum-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--neon-purple);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .quantum-concept {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin-bottom: 12px;
+    text-shadow: 0 0 20px rgba(191,95,255,0.4);
+  }
+  .quantum-insight {
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(232,234,246,0.8);
+    font-style: italic;
+    border-left: 2px solid rgba(191,95,255,0.3);
+    padding-left: 12px;
+  }
+  .quantum-source {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: rgba(191,95,255,0.4);
+    margin-top: 10px;
+  }
+  .quantum-link {
+    color: var(--neon-purple);
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid rgba(191,95,255,0.3);
+    padding: 4px 12px;
+    transition: all 0.2s;
+  }
+  .quantum-link:hover {
+    background: rgba(191,95,255,0.1);
+    border-color: var(--neon-purple);
+  }
   @media (max-width:600px) {
     .ops-grid { grid-template-columns:1fr; }
     .title-raydar { font-size:64px; }
@@ -568,6 +644,16 @@
 
 <!-- ══ CONTENT ══ -->
 <div class="container">
+
+  {% if quantum_of_day %}
+  <div class="quantum-card">
+    <div class="quantum-label">&#9670; QUANTUM OF THE DAY</div>
+    <div class="quantum-concept">{{ quantum_of_day.concept }}</div>
+    <div class="quantum-insight">{{ quantum_of_day.insight }}</div>
+    <div class="quantum-source">CONNECTED TO: {{ quantum_of_day.story_title[:80] }}{% if quantum_of_day.story_title|length > 80 %}...{% endif %}</div>
+    <a class="quantum-link" href="quantum.html">ENTER THE UNCERTAINTY LAB →</a>
+  </div>
+  {% endif %}
 
   {% if weekly_synthesis %}
   <div class="synthesis-card">

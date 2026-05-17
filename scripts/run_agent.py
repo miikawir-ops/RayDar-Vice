@@ -201,6 +201,15 @@ ITEMS:
                 if original:
                     c["url"]    = original["url"]
                     c["source"] = original["source"]
+                elif not c.get("url") or c.get("url") == "None":
+                    # Find any item with similar words as fallback
+                    words = set(c.get("title","").lower().split())
+                    best = max(batch_items, 
+                        key=lambda it: len(words & set(it["title"].lower().split())),
+                        default=None)
+                    if best:
+                        c["url"]    = best["url"]
+                        c["source"] = best["source"]
                 c["score"]     = max(1, min(10, int(c.get("score", 7))))
                 c["chain_tag"] = c.get("chain_tag", "models").lower()
                 if c["chain_tag"] not in ("chips","cloud","models","tools","apps"):
@@ -217,35 +226,59 @@ ITEMS:
     return []
  
  
+# ── PRE-FILTER KEYWORDS ─────────────────────────────────────────────────────
+AI_KEYWORDS = [
+    # Chain layers
+    "nvidia","amd","intel","tsmc","gpu","tpu","chip","semiconductor","hbm",
+    "aws","azure","gcp","cloud","datacenter","data center","hyperscal",
+    "openai","anthropic","google deepmind","meta ai","mistral","llm",
+    "foundation model","language model","gpt","claude","gemini","llama",
+    "diffusion","multimodal","benchmark","training","fine-tun","inference",
+    "langchain","hugging face","mlops","vector","embedding","rag","agent",
+    "copilot","cursor","replit","codeium","developer tool","open source",
+    "enterprise ai","vertical ai","automation","deployment","startup",
+    # Topics
+    "artificial intelligence"," ai ","machine learning","deep learning",
+    "neural network","transformer","generative","reinforcement","robotics",
+    "regulation","policy","safety","alignment","ipo","funding","acquisition",
+    "quantum","compute","parameter","token","context window",
+]
+ 
+def pre_filter(items):
+    """Keep only items with at least one AI/chain keyword in title or summary."""
+    filtered = []
+    for it in items:
+        text = (it["title"] + " " + it["summary"]).lower()
+        if any(kw in text for kw in AI_KEYWORDS):
+            filtered.append(it)
+    print(f"Pre-filter: {len(items)} → {len(filtered)} AI-relevant items")
+    return filtered
+ 
+ 
 def classify_items(items):
     if not items:
         print("No items to classify — check RSS feeds")
         return []
  
-    BATCH_SIZE = 15
-    all_scored = []
+    # Pre-filter to AI-relevant items only
+    relevant = pre_filter(items)
+    if not relevant:
+        print("Pre-filter removed all items — lowering threshold")
+        relevant = items[:20]  # fallback
  
-    chunks = [items[i:i+BATCH_SIZE] for i in range(0, len(items), BATCH_SIZE)]
-    print(f"Classifying {len(items)} items in {len(chunks)} batches of {BATCH_SIZE}")
+    # Take top 20 by title length as proxy for substance
+    relevant = sorted(relevant, key=lambda x: len(x["title"]+x["summary"]), reverse=True)[:20]
  
-    for i, chunk in enumerate(chunks):
-        print(f"  Batch {i+1}/{len(chunks)} ({len(chunk)} items)...")
-        results = classify_batch(chunk, items)
-        all_scored.extend(results)
-        if i < len(chunks) - 1:
-            time.sleep(30)  # polite pause between batches to avoid rate limits
+    print(f"Classifying {len(relevant)} pre-filtered items in 1 batch (1 API call)")
+    results = classify_batch(relevant, relevant)
  
-    if not all_scored:
-        print("No items scored across all batches")
+    if not results:
+        print("No items scored")
         return []
  
-    # Sort by score descending, pick top 5
-    all_scored.sort(key=lambda x: x.get("score", 0), reverse=True)
-    top5 = all_scored[:5]
- 
-    # Paywall filter
-    clean = [c for c in top5 if check_paywall(c.get("url",""))]
-    print(f"Final: {len(all_scored)} scored, top 5 selected, {len(clean)} paywall-free")
+    results.sort(key=lambda x: x.get("score", 0), reverse=True)
+    clean = [c for c in results[:5] if check_paywall(c.get("url",""))]
+    print(f"Final: {len(results)} scored, {len(clean)} paywall-free signals")
     return clean
  
  
@@ -301,7 +334,46 @@ Respond with the paragraph only. No preamble."""
         return None
  
  
-def render_html(items, also_watching, weekly_synthesis):
+def build_quantum_of_day(today_items):
+    """Generate a Reddington-voiced quantum insight tied to today's top AI story."""
+    if not today_items:
+        return None
+ 
+    top = today_items[0]
+    quantum_concepts = [
+        "the Double-Slit Experiment",
+        "Quantum Entanglement",
+        "Schrödinger's Cat",
+        "Quantum Tunneling",
+        "the Heisenberg Uncertainty Principle",
+        "Quantum Superposition",
+        "Wave-Particle Duality",
+    ]
+    import random
+    concept = random.choice(quantum_concepts)
+ 
+    prompt = f"""You are Raymond Reddington — erudite, dangerous, charming, and always
+several steps ahead. You have just read this AI news item:
+ 
+TITLE: {top["title"]}
+SUMMARY: {top["summary"]}
+ 
+In 3-4 sentences, connect this AI development to {concept} in a way that is
+intellectually surprising, slightly unsettling, and unmistakably Reddington.
+Do not explain the quantum concept at length — assume the reader knows it.
+Start with the connection, not the explanation. No preamble, no sign-off.
+Write in first person as Reddington."""
+ 
+    try:
+        insight = call_gemini(prompt, max_tokens=200).strip()
+        print(f"Quantum of the day generated: {concept}")
+        return {"concept": concept, "insight": insight, "story_title": top["title"]}
+    except Exception as e:
+        print(f"Quantum of day error: {e}")
+        return None
+ 
+ 
+def render_html(items, also_watching, weekly_synthesis, quantum_of_day=None):
     template_path = Path("templates/report.html")
     template_str  = template_path.read_text()
     tmpl = Template(template_str)
@@ -311,6 +383,7 @@ def render_html(items, also_watching, weekly_synthesis):
         items            = items,
         also_watching    = also_watching,
         weekly_synthesis = weekly_synthesis,
+        quantum_of_day   = quantum_of_day,
         report_date      = report_date,
         item_count       = len(items),
         is_monday        = now.weekday() == 0,
@@ -332,4 +405,5 @@ if __name__ == "__main__":
     history.append({"date": today_str, "items": final_items})
     save_history(history)
  
-    render_html(final_items, also_watching, weekly_synthesis)
+    quantum_of_day   = build_quantum_of_day(final_items)
+    render_html(final_items, also_watching, weekly_synthesis, quantum_of_day)
