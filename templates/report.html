@@ -604,9 +604,40 @@
     background: rgba(191,95,255,0.1);
     border-color: var(--neon-purple);
   }
-  @media (max-width:600px) {
+  @media (max-width:768px) {
     .ops-grid { grid-template-columns:1fr; }
     .title-raydar { font-size:64px; }
+    .container { padding: 20px 14px 48px; }
+    .hero { padding-bottom: 0; }
+    .hero-img-wrap { width: clamp(240px, 85vw, 400px); }
+    .date-bar { font-size: 9px; padding: 6px 12px; gap: 6px; }
+    .news-card { padding: 14px 14px; }
+    .card-headline { font-size: 15px; }
+    .card-what { font-size: 12px; }
+    .card-so-what { font-size: 11px; }
+    .filter-bar { gap: 6px; }
+    .filter-btn { font-size: 9px; padding: 4px 10px; }
+    .section-label { font-size: 11px; }
+    .callsign-badge { font-size: 9px; padding: 3px 7px; }
+    .synthesis-card { padding: 16px 14px; }
+    .synthesis-text { font-size: 12px; }
+    .quantum-card { padding: 16px 14px; }
+    .quantum-insight { font-size: 12px; }
+    .watching-card { padding: 10px 14px; }
+    .page-footer { font-size: 9px; letter-spacing: 0.1em; padding: 20px 12px; }
+  }
+  @media (max-width:480px) {
+    .title-raydar { font-size: 48px; }
+    .title-sub { font-size: 10px; letter-spacing: 0.25em; }
+    .agent-name { font-size: 16px; letter-spacing: 0.2em; }
+    .reddington-credit { font-size: 9px; }
+    .hifi-badge { display: none; }
+    .hero-img-wrap { width: clamp(220px, 92vw, 360px); }
+    .card-meta { gap: 6px; }
+    .chain-tag { font-size: 8px; padding: 2px 7px; }
+    .ops-card-name { font-size: 12px; }
+    .ops-card-desc { font-size: 10px; }
+    .heat-bar { gap: 2px; }
   }
 </style>
 </head>

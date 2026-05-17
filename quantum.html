@@ -258,8 +258,24 @@ body::before {
 }
 .ops-link:hover { background:rgba(0,229,255,0.08); border-color:var(--cyan); }
 
-@media(max-width:600px) {
-  .exp-canvas { height:160px; }
+@media(max-width:768px) {
+  .exp-canvas { height:180px; }
+  .header-title { font-size: 48px; }
+  .exp-title { font-size: 20px; }
+  .exp-header { flex-direction: column; gap: 8px; }
+  .exp-btn { align-self: flex-start; }
+  .ops-row { flex-direction: column; align-items: center; }
+  .reddington-intro { font-size: 12px; }
+  .experiments { padding: 0 12px 40px; gap: 28px; }
+}
+@media(max-width:480px) {
+  .exp-canvas { height:140px; }
+  .header-title { font-size: 38px; }
+  .header { padding: 24px 12px 12px; }
+  .exp-card { border-left-width: 2px; }
+  .exp-header { padding: 14px 14px 0; }
+  .exp-quote { padding: 12px 14px 14px; font-size: 11px; }
+  .exp-status { padding: 0 14px 4px; font-size: 9px; }
 }
 </style>
 </head>
@@ -509,13 +525,27 @@ function drawSlit() {
     return true;
   });
 
-  // Draw accumulation pattern on screen
+  // Draw accumulation pattern on screen — enhanced visibility
   for (let y = 0; y < slitPattern.length; y++) {
     if (slitPattern[y] > 0) {
-      const intensity = Math.min(slitPattern[y] / 60, 1);
-      const color = observed ? `rgba(255,45,120,${intensity})` : `rgba(0,229,255,${intensity})`;
-      slitCtx.fillStyle = color;
-      slitCtx.fillRect(screenX+2, y, W*0.12 * intensity, 1);
+      const intensity = Math.min(slitPattern[y] / 40, 1); // lower divisor = brighter faster
+      const barW = W * 0.15 * intensity;
+      if (observed) {
+        slitCtx.fillStyle = `rgba(255,45,120,${intensity * 0.95})`;
+      } else {
+        // Wave: cyan core with purple glow for bright bands
+        slitCtx.fillStyle = intensity > 0.6
+          ? `rgba(191,95,255,${intensity * 0.9})`
+          : `rgba(0,229,255,${intensity * 0.9})`;
+      }
+      slitCtx.fillRect(screenX+2, y, barW, 1);
+      // Extra glow on bright bands
+      if (intensity > 0.5) {
+        slitCtx.fillStyle = observed
+          ? `rgba(255,45,120,0.15)`
+          : `rgba(0,229,255,0.12)`;
+        slitCtx.fillRect(screenX+2, y-1, barW*1.4, 3);
+      }
     }
   }
 
