@@ -13,6 +13,37 @@
   },
   {
     "date": "2026-05-17",
-    "items": []
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Reimagining the mouse pointer for the AI era",
+        "summary": "Google DeepMind is transforming the mouse pointer into a context-aware AI partner. This innovation moves beyond traditional prompting, enabling intuitive AI collaboration in Chrome and other applications.",
+        "so_what": "This fundamentally shifts how users interact with AI within applications, setting a new standard for intuitive collaboration. Businesses must now consider integrating such context-aware AI into their user experience strategies to remain competitive.",
+        "url": "https://deepmind.google/blog/ai-pointer/",
+        "source": "Google DeepMind News"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "Granite R2: Open Multilingual Embeddings with 32K Context & Top Retrieval Quality",
+        "summary": "IBM has released Granite Embedding Multilingual R2, an open-source model under Apache 2.0 license. It boasts best-in-class retrieval quality for models under 100M parameters and supports a 32K context window.",
+        "so_what": "This democratizes access to high-performance multilingual embeddings, reducing costs and vendor lock-in for RAG systems. Enterprises can now build more robust, open-source-driven multilingual AI applications with greater efficiency.",
+        "url": null,
+        "source": ""
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 6,
+        "title": "GitHub Game Sharpens AI Agent Security Skills for 10,000+ Devs",
+        "summary": "GitHub has launched an open-source game, the Secure Code Game, allowing over 10,000 developers to practice finding and exploiting vulnerabilities in agentic AI systems. It offers five progressive challenges to build practical AI security skills.",
+        "so_what": "This initiative provides crucial training for developers on the emerging security risks of AI agents, a critical step for safe enterprise AI adoption. Enhancing developer skills in this area directly impacts the reliability and trustworthiness of future AI applications and tools, strengthening the overall AI development ecosystem.",
+        "url": null,
+        "source": "The GitHub Blog"
+      }
+    ]
   }
 ]
