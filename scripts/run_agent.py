@@ -115,10 +115,14 @@ def check_paywall(url):
  
 def call_gemini(prompt, max_tokens=2500):
     try:
+        from google.genai import types
         response = gemini_client.models.generate_content(
             model=GEMINI_MODEL,
             contents=prompt,
-            config={"temperature": 0.3, "max_output_tokens": max_tokens}
+            config=types.GenerateContentConfig(
+                temperature=0.3,
+                max_output_tokens=max_tokens,
+            )
         )
         return response.text
     except Exception as e:
