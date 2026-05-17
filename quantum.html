@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Uncertainty Lab — RayDar Vice</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #07091a;
+  --navy2:   #0d1030;
+  --pink:    #ff2d78;
+  --cyan:    #00e5ff;
+  --purple:  #bf5fff;
+  --gold:    #ffd700;
+  --green:   #39ff14;
+  --text:    #e8eaf6;
+  --muted:   #7986cb;
+  --card:    #0a0d24;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--navy);
+  color: var(--text);
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+/* Scanlines */
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px);
+  pointer-events:none;
+  z-index:9999;
+}
+
+/* Radar beam */
+.radar-beam {
+  position:fixed;
+  top:0; left:-200px;
+  width:200px; height:100vh;
+  background: linear-gradient(90deg,transparent,rgba(0,229,255,0.04),rgba(191,95,255,0.12),rgba(0,229,255,0.04),transparent);
+  pointer-events:none;
+  z-index:9998;
+  animation: sweep 5s ease-in-out infinite;
+}
+.radar-beam::after {
+  content:'';
+  position:absolute;
+  right:0; top:0; bottom:0; width:2px;
+  background: linear-gradient(180deg,transparent,var(--cyan),rgba(255,255,255,0.9),var(--cyan),transparent);
+  box-shadow: 0 0 15px 4px var(--cyan);
+}
+@keyframes sweep { 0%{left:-200px;opacity:0} 5%{opacity:1} 90%{opacity:1} 100%{left:100%;opacity:0} }
+
+/* ── HEADER ── */
+.header {
+  text-align:center;
+  padding: 40px 20px 20px;
+  position:relative;
+}
+
+.header-eyebrow {
+  font-family:'Oswald',sans-serif;
+  font-size:11px;
+  font-weight:300;
+  letter-spacing:0.4em;
+  color:var(--muted);
+  margin-bottom:8px;
+}
+.header-eyebrow a {
+  color:var(--cyan);
+  text-decoration:none;
+}
+.header-eyebrow a:hover { text-shadow:0 0 10px var(--cyan); }
+
+.header-title {
+  font-family:'Bebas Neue',sans-serif;
+  font-size: clamp(48px,10vw,90px);
+  letter-spacing:0.08em;
+  background: linear-gradient(90deg, var(--cyan), var(--purple), var(--pink));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter: drop-shadow(0 0 30px rgba(191,95,255,0.4));
+  line-height:0.9;
+}
+
+.header-sub {
+  font-family:'Bebas Neue',sans-serif;
+  font-size: clamp(18px,3vw,28px);
+  letter-spacing:0.5em;
+  color:rgba(255,255,255,0.25);
+  margin-top:4px;
+}
+
+.reddington-intro {
+  max-width:600px;
+  margin:24px auto 0;
+  font-size:13px;
+  line-height:1.8;
+  color:rgba(232,234,246,0.55);
+  font-style:italic;
+  border-left:2px solid rgba(191,95,255,0.4);
+  padding-left:16px;
+  text-align:left;
+}
+.reddington-intro .sig {
+  display:block;
+  margin-top:8px;
+  color:var(--purple);
+  font-style:normal;
+  font-size:11px;
+  letter-spacing:0.15em;
+}
+
+/* ── DIVIDER ── */
+.neon-divider {
+  height:1px;
+  background: linear-gradient(90deg,transparent,var(--cyan),var(--purple),var(--pink),transparent);
+  opacity:0.4;
+  margin:32px 0;
+}
+
+/* ── EXPERIMENT CARDS ── */
+.experiments {
+  max-width:900px;
+  margin:0 auto;
+  padding:0 20px 60px;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+
+.exp-card {
+  background: var(--card);
+  border:1px solid rgba(255,255,255,0.06);
+  position:relative;
+  overflow:hidden;
+}
+
+.exp-card::before {
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;height:2px;
+  background: var(--accent, var(--cyan));
+  box-shadow: 0 0 20px var(--accent, var(--cyan));
+}
+
+.exp-header {
+  padding:20px 24px 0;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.exp-number {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:11px;
+  letter-spacing:0.3em;
+  color:var(--muted);
+}
+
+.exp-title {
+  font-family:'Bebas Neue',sans-serif;
+  font-size: clamp(22px,4vw,34px);
+  letter-spacing:0.08em;
+  color:#fff;
+  flex:1;
+}
+
+.exp-btn {
+  font-family:'Oswald',sans-serif;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.2em;
+  padding:6px 16px;
+  border:1px solid var(--accent, var(--cyan));
+  background:transparent;
+  color:var(--accent, var(--cyan));
+  cursor:pointer;
+  transition:all 0.2s;
+  white-space:nowrap;
+}
+.exp-btn:hover {
+  background:var(--accent, var(--cyan));
+  color:var(--navy);
+}
+
+.exp-canvas {
+  display:block;
+  width:100%;
+  height:220px;
+  margin-top:16px;
+  cursor:pointer;
+}
+
+.exp-quote {
+  margin:0;
+  padding:16px 24px 20px;
+  font-size:12px;
+  line-height:1.7;
+  color:rgba(232,234,246,0.5);
+  font-style:italic;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+.exp-quote::before { content:'"'; color:var(--accent,var(--cyan)); font-size:18px; }
+.exp-quote::after  { content:'"'; color:var(--accent,var(--cyan)); font-size:18px; }
+.exp-quote .attr {
+  display:block;
+  margin-top:6px;
+  font-style:normal;
+  font-size:10px;
+  letter-spacing:0.15em;
+  color:var(--accent,var(--cyan));
+}
+
+.exp-status {
+  padding:0 24px 4px;
+  font-size:10px;
+  letter-spacing:0.12em;
+  color:var(--muted);
+  min-height:20px;
+}
+
+/* ── FOOTER ── */
+.page-footer {
+  text-align:center;
+  padding:28px 20px;
+  font-size:10px;
+  letter-spacing:0.18em;
+  color:rgba(255,255,255,0.3);
+}
+.ops-row {
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.ops-link {
+  font-family:'Oswald',sans-serif;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.15em;
+  color:var(--cyan);
+  text-decoration:none;
+  border:1px solid rgba(0,229,255,0.2);
+  padding:6px 14px;
+  transition:all 0.2s;
+}
+.ops-link:hover { background:rgba(0,229,255,0.08); border-color:var(--cyan); }
+
+@media(max-width:600px) {
+  .exp-canvas { height:160px; }
+}
+</style>
+</head>
+<body>
+
+<div class="radar-beam"></div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-eyebrow"><a href="raydar_vice.html">← RAYDAR VICE</a> &nbsp;·&nbsp; CLASSIFIED DIVISION</div>
+  <div class="header-title">THE UNCERTAINTY<br>LAB</div>
+  <div class="header-sub">Quantum Intelligence Division</div>
+  <p class="reddington-intro">
+    People ask me why I keep a quantum physics laboratory. I tell them the same thing I tell everyone who asks too many questions — I don't. And yet, here we are. These experiments don't merely describe the universe. They describe the only reliable operating principles I've ever found.
+    <span class="sig">— R. REDDINGTON &nbsp;·&nbsp; NICK'S PIZZA, ESPOO</span>
+  </p>
+</div>
+
+<div class="neon-divider"></div>
+
+<!-- EXPERIMENTS -->
+<div class="experiments">
+
+  <!-- 1. DOUBLE SLIT -->
+  <div class="exp-card" style="--accent:#00e5ff">
+    <div class="exp-header">
+      <div>
+        <div class="exp-number">EXPERIMENT 01</div>
+        <div class="exp-title">THE DOUBLE-SLIT EXPERIMENT</div>
+      </div>
+      <button class="exp-btn" onclick="toggleObserve()">OBSERVE</button>
+    </div>
+    <div class="exp-status" id="slit-status">UNOBSERVED — WAVE BEHAVIOUR ACTIVE</div>
+    <canvas id="slit-canvas" class="exp-canvas" onclick="toggleObserve()"></canvas>
+    <p class="exp-quote">
+      I've built my entire career on the fact that being watched changes everything.
+      <span class="attr">— R. REDDINGTON</span>
+    </p>
+  </div>
+
+  <!-- 2. ENTANGLEMENT -->
+  <div class="exp-card" style="--accent:#bf5fff">
+    <div class="exp-header">
+      <div>
+        <div class="exp-number">EXPERIMENT 02</div>
+        <div class="exp-title">QUANTUM ENTANGLEMENT</div>
+      </div>
+      <button class="exp-btn" onclick="flipEntanglement()">FLIP PARTICLE A</button>
+    </div>
+    <div class="exp-status" id="ent-status">ENTANGLED — MONITORING BOTH PARTICLES</div>
+    <canvas id="ent-canvas" class="exp-canvas"></canvas>
+    <p class="exp-quote">
+      Some connections cannot be broken by distance. I know this better than most.
+      <span class="attr">— R. REDDINGTON</span>
+    </p>
+  </div>
+
+  <!-- 3. SCHRODINGER -->
+  <div class="exp-card" style="--accent:#ff2d78">
+    <div class="exp-header">
+      <div>
+        <div class="exp-number">EXPERIMENT 03</div>
+        <div class="exp-title">SCHRÖDINGER'S CAT</div>
+      </div>
+      <button class="exp-btn" onclick="openBox()">OPEN THE BOX</button>
+    </div>
+    <div class="exp-status" id="cat-status">SUPERPOSITION — SIMULTANEOUSLY ALIVE AND DEAD</div>
+    <canvas id="cat-canvas" class="exp-canvas" onclick="openBox()"></canvas>
+    <p class="exp-quote">
+      I exist in exactly this state in the minds of most governments. Simultaneously alive and not.
+      <span class="attr">— R. REDDINGTON</span>
+    </p>
+  </div>
+
+  <!-- 4. TUNNELING -->
+  <div class="exp-card" style="--accent:#39ff14">
+    <div class="exp-header">
+      <div>
+        <div class="exp-number">EXPERIMENT 04</div>
+        <div class="exp-title">QUANTUM TUNNELING</div>
+      </div>
+      <button class="exp-btn" onclick="resetTunnel()">RESET</button>
+    </div>
+    <div class="exp-status" id="tunnel-status">FIRING PARTICLES AT BARRIER...</div>
+    <canvas id="tunnel-canvas" class="exp-canvas"></canvas>
+    <p class="exp-quote">
+      Every border, every wall, every impossibility — has a probability of being crossed. I simply increase my odds.
+      <span class="attr">— R. REDDINGTON</span>
+    </p>
+  </div>
+
+  <!-- 5. HEISENBERG -->
+  <div class="exp-card" style="--accent:#ffd700">
+    <div class="exp-header">
+      <div>
+        <div class="exp-number">EXPERIMENT 05</div>
+        <div class="exp-title">HEISENBERG UNCERTAINTY</div>
+      </div>
+    </div>
+    <div class="exp-status" id="heis-status">DRAG TO MEASURE — PRECISION HAS A PRICE</div>
+    <canvas id="heis-canvas" class="exp-canvas"></canvas>
+    <p class="exp-quote">
+      The moment you think you know exactly where I am, you've already lost track of where I'm going.
+      <span class="attr">— R. REDDINGTON</span>
+    </p>
+  </div>
+
+</div>
+
+<div class="neon-divider"></div>
+
+<!-- FOOTER -->
+<div class="page-footer">
+  <div class="ops-row">
+    <a class="ops-link" href="raydar_vice.html">RAYDAR VICE</a>
+    <a class="ops-link" href="https://miikawir-ops.github.io/AI_valuechain/ai_chain_report.html" target="_blank">AI VALUECHAIN</a>
+    <a class="ops-link" href="https://miikawir-ops.github.io/TP_special_agent/tp_report.html" target="_blank">TP SPECIAL AGENT</a>
+  </div>
+  THE UNCERTAINTY LAB &nbsp;·&nbsp; QUANTUM INTELLIGENCE DIVISION &nbsp;·&nbsp; NICK'S PIZZA, ESPOO &nbsp;·&nbsp; ENERGIZED BY <span style="color:#ff2d78">COBHC</span>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// EXPERIMENT 1: DOUBLE SLIT
+// ═══════════════════════════════════════
+const slitCanvas = document.getElementById('slit-canvas');
+const slitCtx = slitCanvas.getContext('2d');
+let observed = false;
+let slitParticles = [];
+let slitPattern = [];
+let slitAnim;
+
+function resizeCanvas(c) {
+  c.width = c.offsetWidth * window.devicePixelRatio;
+  c.height = c.offsetHeight * window.devicePixelRatio;
+  const ctx = c.getContext('2d');
+  ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+}
+
+function initSlit() {
+  resizeCanvas(slitCanvas);
+  slitPattern = new Array(Math.floor(slitCanvas.offsetWidth)).fill(0);
+  slitParticles = [];
+  drawSlit();
+}
+
+function toggleObserve() {
+  observed = !observed;
+  document.getElementById('slit-status').textContent =
+    observed ? 'OBSERVED — PARTICLE BEHAVIOUR (WAVE COLLAPSED)' : 'UNOBSERVED — WAVE BEHAVIOUR ACTIVE';
+  document.querySelector('.exp-card:nth-child(1) .exp-btn').textContent =
+    observed ? 'STOP OBSERVING' : 'OBSERVE';
+  slitPattern = new Array(Math.floor(slitCanvas.offsetWidth)).fill(0);
+  slitParticles = [];
+}
+
+function drawSlit() {
+  const W = slitCanvas.offsetWidth, H = slitCanvas.offsetHeight;
+  slitCtx.fillStyle = 'rgba(7,9,26,0.18)';
+  slitCtx.fillRect(0,0,W,H);
+
+  // Fire a new particle occasionally
+  if (Math.random() < 0.35) {
+    const angle = observed
+      ? (Math.random() < 0.5 ? -0.15 : 0.15) + (Math.random()-0.5)*0.08
+      : (Math.random()-0.5) * Math.PI * 0.55;
+    slitParticles.push({
+      x: W*0.18, y: H*0.5,
+      vx: 2.8 + Math.random(),
+      vy: Math.sin(angle) * 2.5,
+      life: 1, age: 0
+    });
+  }
+
+  // Draw barrier
+  const bx = W * 0.38;
+  slitCtx.strokeStyle = 'rgba(0,229,255,0.5)';
+  slitCtx.lineWidth = 3;
+  slitCtx.beginPath(); slitCtx.moveTo(bx, 0); slitCtx.lineTo(bx, H*0.38); slitCtx.stroke();
+  slitCtx.beginPath(); slitCtx.moveTo(bx, H*0.44); slitCtx.lineTo(bx, H*0.56); slitCtx.stroke();
+  slitCtx.beginPath(); slitCtx.moveTo(bx, H*0.62); slitCtx.lineTo(bx, H); slitCtx.stroke();
+
+  // Update & draw particles
+  slitParticles = slitParticles.filter(p => {
+    p.x += p.vx; p.y += p.vy; p.age++;
+    if (p.x > W*0.85 && p.age > 10) {
+      const idx = Math.floor(p.y);
+      if (idx >= 0 && idx < slitPattern.length) slitPattern[idx] = Math.min(slitPattern[idx] + 1, 60);
+      return false;
+    }
+    const alpha = Math.max(0, 1 - p.age/60);
+    slitCtx.beginPath();
+    slitCtx.arc(p.x, p.y, 2, 0, Math.PI*2);
+    slitCtx.fillStyle = observed
+      ? `rgba(255,45,120,${alpha})`
+      : `rgba(0,229,255,${alpha})`;
+    slitCtx.fill();
+    slitCtx.shadowBlur = 6;
+    slitCtx.shadowColor = observed ? '#ff2d78' : '#00e5ff';
+    slitCtx.fill();
+    slitCtx.shadowBlur = 0;
+    return p.x < W && p.age < 80;
+  });
+
+  // Draw accumulation pattern
+  const screenX = W * 0.88;
+  for (let y = 0; y < slitPattern.length; y++) {
+    if (slitPattern[y] > 0) {
+      const intensity = Math.min(slitPattern[y] / 50, 1);
+      slitCtx.fillStyle = observed
+        ? `rgba(255,45,120,${intensity * 0.9})`
+        : `rgba(0,229,255,${intensity * 0.9})`;
+      slitCtx.fillRect(screenX, y, W*0.1 * intensity, 1);
+    }
+  }
+
+  // Labels
+  slitCtx.font = '10px "Share Tech Mono"';
+  slitCtx.fillStyle = 'rgba(0,229,255,0.4)';
+  slitCtx.fillText('SOURCE', W*0.04, H*0.5 - 8);
+  slitCtx.fillText('BARRIER', bx - 30, 12);
+  slitCtx.fillText('SCREEN', screenX - 4, 12);
+
+  slitAnim = requestAnimationFrame(drawSlit);
+}
+
+// ═══════════════════════════════════════
+// EXPERIMENT 2: ENTANGLEMENT
+// ═══════════════════════════════════════
+const entCanvas = document.getElementById('ent-canvas');
+const entCtx = entCanvas.getContext('2d');
+let entState = { spinA: 1, spinB: -1, flipping: false, distance: 0, pulseR: 0 };
+let entAnim;
+
+function initEnt() {
+  resizeCanvas(entCanvas);
+  drawEnt();
+}
+
+function flipEntanglement() {
+  if (entState.flipping) return;
+  entState.flipping = true;
+  entState.pulseR = 0;
+  setTimeout(() => {
+    entState.spinA *= -1;
+    entState.spinB *= -1;
+    entState.flipping = false;
+  }, 400);
+}
+
+function drawEnt() {
+  const W = entCanvas.offsetWidth, H = entCanvas.offsetHeight;
+  entCtx.fillStyle = 'rgba(7,9,26,0.25)';
+  entCtx.fillRect(0,0,W,H);
+
+  const t = Date.now() / 1000;
+  entState.distance += 0.3;
+  entState.pulseR = Math.min(entState.pulseR + 2, W*0.4);
+
+  const ax = W*0.2, bx = W*0.8, cy = H*0.5;
+
+  // Connection line
+  const grad = entCtx.createLinearGradient(ax,cy,bx,cy);
+  grad.addColorStop(0,'rgba(191,95,255,0.6)');
+  grad.addColorStop(0.5,'rgba(255,255,255,0.15)');
+  grad.addColorStop(1,'rgba(191,95,255,0.6)');
+  entCtx.strokeStyle = grad;
+  entCtx.lineWidth = 1;
+  entCtx.setLineDash([4,8]);
+  entCtx.beginPath(); entCtx.moveTo(ax,cy); entCtx.lineTo(bx,cy); entCtx.stroke();
+  entCtx.setLineDash([]);
+
+  // Draw particle
+  function drawParticle(x, spin, color, label) {
+    const wobble = entState.flipping ? Math.sin(t*20)*8 : 0;
+    // Outer glow
+    const grd = entCtx.createRadialGradient(x,cy,0,x,cy,36);
+    grd.addColorStop(0, color + 'aa');
+    grd.addColorStop(1, color + '00');
+    entCtx.fillStyle = grd;
+    entCtx.beginPath(); entCtx.arc(x,cy,36,0,Math.PI*2); entCtx.fill();
+    // Core
+    entCtx.beginPath(); entCtx.arc(x,cy,14,0,Math.PI*2);
+    entCtx.fillStyle = color;
+    entCtx.fill();
+    // Spin arrow
+    const arrowY = spin > 0 ? -22 + wobble : 22 + wobble;
+    const arrowDir = spin > 0 ? -1 : 1;
+    entCtx.strokeStyle = '#fff';
+    entCtx.lineWidth = 2;
+    entCtx.beginPath();
+    entCtx.moveTo(x, cy + (spin > 0 ? 18 : -18));
+    entCtx.lineTo(x, cy + arrowY);
+    entCtx.stroke();
+    // arrowhead
+    entCtx.beginPath();
+    entCtx.moveTo(x-5, cy + arrowY + arrowDir*8);
+    entCtx.lineTo(x, cy + arrowY);
+    entCtx.lineTo(x+5, cy + arrowY + arrowDir*8);
+    entCtx.strokeStyle = '#fff'; entCtx.stroke();
+    // label
+    entCtx.font = '11px "Share Tech Mono"';
+    entCtx.fillStyle = 'rgba(255,255,255,0.5)';
+    entCtx.textAlign = 'center';
+    entCtx.fillText(label, x, cy + 52);
+    entCtx.fillText(spin > 0 ? 'SPIN ↑' : 'SPIN ↓', x, cy + 66);
+    entCtx.textAlign = 'left';
+  }
+
+  drawParticle(ax, entState.spinA, '#bf5fff', 'PARTICLE A');
+  drawParticle(bx, entState.spinB, '#00e5ff', 'PARTICLE B');
+
+  // Distance counter
+  entCtx.font = '10px "Share Tech Mono"';
+  entCtx.fillStyle = 'rgba(191,95,255,0.5)';
+  entCtx.textAlign = 'center';
+  const km = Math.floor(entState.distance * 47) % 999999;
+  entCtx.fillText(`SEPARATION: ${km.toLocaleString()} km — CORRELATION: INSTANT`, W/2, H - 12);
+  entCtx.textAlign = 'left';
+
+  entAnim = requestAnimationFrame(drawEnt);
+}
+
+// ═══════════════════════════════════════
+// EXPERIMENT 3: SCHRÖDINGER
+// ═══════════════════════════════════════
+const catCanvas = document.getElementById('cat-canvas');
+const catCtx = catCanvas.getContext('2d');
+let catState = { open: false, alive: true, opening: false, openProgress: 0, phase: 0 };
+let catAnim;
+
+function initCat() {
+  resizeCanvas(catCanvas);
+  drawCat();
+}
+
+function openBox() {
+  if (catState.opening) return;
+  if (catState.open) {
+    catState.open = false;
+    catState.openProgress = 0;
+    catState.opening = false;
+    document.getElementById('cat-status').textContent = 'SUPERPOSITION — SIMULTANEOUSLY ALIVE AND DEAD';
+    document.querySelector('.exp-card:nth-child(3) .exp-btn').textContent = 'OPEN THE BOX';
+    return;
+  }
+  catState.opening = true;
+  catState.alive = Math.random() > 0.5;
+}
+
+function drawCat() {
+  const W = catCanvas.offsetWidth, H = catCanvas.offsetHeight;
+  catCtx.fillStyle = 'rgba(7,9,26,0.3)';
+  catCtx.fillRect(0,0,W,H);
+  catState.phase += 0.05;
+
+  const cx = W/2, cy = H/2;
+  const bw = Math.min(W*0.45, 180), bh = Math.min(H*0.7, 150);
+
+  if (catState.opening) {
+    catState.openProgress = Math.min(catState.openProgress + 0.04, 1);
+    if (catState.openProgress >= 1) {
+      catState.open = true;
+      catState.opening = false;
+      const status = catState.alive ? '🐱 ALIVE — WAVEFUNCTION COLLAPSED TO LIFE' : '💀 DEAD — WAVEFUNCTION COLLAPSED TO DEATH';
+      document.getElementById('cat-status').textContent = status;
+      document.querySelector('.exp-card:nth-child(3) .exp-btn').textContent = 'RESET';
+    }
+  }
+
+  // Box body
+  catCtx.strokeStyle = 'rgba(255,45,120,0.6)';
+  catCtx.lineWidth = 2;
+  catCtx.strokeRect(cx - bw/2, cy - bh/2 + 20, bw, bh);
+
+  // Box lid (opens upward)
+  const lidAngle = catState.openProgress * Math.PI * 0.7;
+  catCtx.save();
+  catCtx.translate(cx - bw/2, cy - bh/2 + 20);
+  catCtx.rotate(-lidAngle);
+  catCtx.strokeStyle = 'rgba(255,45,120,0.8)';
+  catCtx.strokeRect(0, -18, bw, 18);
+  catCtx.restore();
+
+  // Contents
+  if (!catState.open && !catState.opening) {
+    // Superposition — flickering ghost
+    const flicker = Math.sin(catState.phase * 3.7) * 0.5 + 0.5;
+    // Alive cat
+    catCtx.globalAlpha = flicker * 0.8;
+    drawCatFace(catCtx, cx, cy + 10, 28, '#39ff14', true);
+    // Dead cat
+    catCtx.globalAlpha = (1-flicker) * 0.8;
+    drawCatFace(catCtx, cx, cy + 10, 28, '#ff2d78', false);
+    catCtx.globalAlpha = 1;
+    // Superposition label
+    catCtx.font = '10px "Share Tech Mono"';
+    catCtx.fillStyle = `rgba(191,95,255,${0.5 + Math.sin(catState.phase)*0.3})`;
+    catCtx.textAlign = 'center';
+    catCtx.fillText('|ψ⟩ = α|alive⟩ + β|dead⟩', cx, cy + bh/2 + 10);
+    catCtx.textAlign = 'left';
+  } else if (catState.open) {
+    catCtx.globalAlpha = 1;
+    drawCatFace(catCtx, cx, cy + 10, 32, catState.alive ? '#39ff14' : '#ff2d78', catState.alive);
+    catCtx.font = '11px "Share Tech Mono"';
+    catCtx.fillStyle = catState.alive ? '#39ff14' : '#ff2d78';
+    catCtx.textAlign = 'center';
+    catCtx.fillText(catState.alive ? 'MEOW' : 'RIP', cx, cy + bh/2 + 10);
+    catCtx.textAlign = 'left';
+  }
+
+  catAnim = requestAnimationFrame(drawCat);
+}
+
+function drawCatFace(ctx, x, y, r, color, alive) {
+  // Head
+  ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2);
+  ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.stroke();
+  // Ears
+  ctx.beginPath();
+  ctx.moveTo(x-r*0.6, y-r*0.8); ctx.lineTo(x-r*0.9, y-r*1.4); ctx.lineTo(x-r*0.2, y-r*0.9);
+  ctx.strokeStyle = color; ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(x+r*0.6, y-r*0.8); ctx.lineTo(x+r*0.9, y-r*1.4); ctx.lineTo(x+r*0.2, y-r*0.9);
+  ctx.stroke();
+  // Eyes
+  if (alive) {
+    ctx.beginPath(); ctx.arc(x-r*0.35, y-r*0.15, 4, 0, Math.PI*2);
+    ctx.fillStyle = color; ctx.fill();
+    ctx.beginPath(); ctx.arc(x+r*0.35, y-r*0.15, 4, 0, Math.PI*2); ctx.fill();
+  } else {
+    // X eyes
+    ctx.strokeStyle = color; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(x-r*0.5,y-r*0.3); ctx.lineTo(x-r*0.2,y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x-r*0.2,y-r*0.3); ctx.lineTo(x-r*0.5,y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x+r*0.2,y-r*0.3); ctx.lineTo(x+r*0.5,y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x+r*0.5,y-r*0.3); ctx.lineTo(x+r*0.2,y); ctx.stroke();
+  }
+  // Mouth
+  ctx.beginPath();
+  if (alive) {
+    ctx.arc(x, y+r*0.2, r*0.3, 0.2, Math.PI-0.2);
+  } else {
+    ctx.arc(x, y+r*0.5, r*0.3, Math.PI+0.2, -0.2);
+  }
+  ctx.strokeStyle = color; ctx.lineWidth = 1.5; ctx.stroke();
+}
+
+// ═══════════════════════════════════════
+// EXPERIMENT 4: QUANTUM TUNNELING
+// ═══════════════════════════════════════
+const tunnelCanvas = document.getElementById('tunnel-canvas');
+const tunnelCtx = tunnelCanvas.getContext('2d');
+let tunnelParticles = [], tunnelCount = {bounced:0, tunneled:0};
+let tunnelAnim;
+
+function initTunnel() {
+  resizeCanvas(tunnelCanvas);
+  tunnelParticles = [];
+  drawTunnel();
+}
+
+function resetTunnel() {
+  tunnelParticles = [];
+  tunnelCount = {bounced:0, tunneled:0};
+  document.getElementById('tunnel-status').textContent = 'FIRING PARTICLES AT BARRIER...';
+}
+
+function drawTunnel() {
+  const W = tunnelCanvas.offsetWidth, H = tunnelCanvas.offsetHeight;
+  tunnelCtx.fillStyle = 'rgba(7,9,26,0.2)';
+  tunnelCtx.fillRect(0,0,W,H);
+
+  const barrierX = W * 0.55, barrierW = W * 0.06;
+
+  // Barrier
+  const bGrad = tunnelCtx.createLinearGradient(barrierX,0,barrierX+barrierW,0);
+  bGrad.addColorStop(0,'rgba(57,255,20,0.1)');
+  bGrad.addColorStop(0.5,'rgba(57,255,20,0.35)');
+  bGrad.addColorStop(1,'rgba(57,255,20,0.1)');
+  tunnelCtx.fillStyle = bGrad;
+  tunnelCtx.fillRect(barrierX, 0, barrierW, H);
+  tunnelCtx.strokeStyle = 'rgba(57,255,20,0.5)';
+  tunnelCtx.lineWidth = 1;
+  tunnelCtx.strokeRect(barrierX, 0, barrierW, H);
+
+  // Barrier label
+  tunnelCtx.font = '9px "Share Tech Mono"';
+  tunnelCtx.fillStyle = 'rgba(57,255,20,0.5)';
+  tunnelCtx.textAlign = 'center';
+  tunnelCtx.fillText('BARRIER', barrierX + barrierW/2, 14);
+  tunnelCtx.textAlign = 'left';
+
+  // Spawn particle
+  if (Math.random() < 0.08 && tunnelParticles.length < 12) {
+    const willTunnel = Math.random() < 0.22;
+    tunnelParticles.push({
+      x: W*0.08, y: H*0.3 + Math.random()*H*0.4,
+      vx: 2.2 + Math.random()*0.8,
+      tunneling: false, willTunnel,
+      bounced: false, tunneled: false,
+      alpha: 1, trail: []
+    });
+  }
+
+  // Update particles
+  tunnelParticles = tunnelParticles.filter(p => {
+    p.trail.push({x:p.x, y:p.y});
+    if (p.trail.length > 18) p.trail.shift();
+
+    if (!p.bounced && !p.tunneled) {
+      if (p.x >= barrierX && !p.willTunnel) {
+        p.vx *= -1; p.bounced = true;
+        tunnelCount.bounced++;
+      } else if (p.x >= barrierX + barrierW && p.willTunnel) {
+        p.tunneled = true;
+        tunnelCount.tunneled++;
+        document.getElementById('tunnel-status').textContent =
+          `TUNNELED: ${tunnelCount.tunneled} | BOUNCED: ${tunnelCount.bounced} | PROBABILITY: ~22%`;
+      }
+    }
+
+    if (p.bounced) {
+      p.x += p.vx;
+      if (p.x < 0) { p.alpha -= 0.05; }
+    } else {
+      p.x += p.vx;
+    }
+
+    // Trail
+    p.trail.forEach((pt, i) => {
+      const a = (i/p.trail.length) * p.alpha * 0.4;
+      tunnelCtx.beginPath();
+      tunnelCtx.arc(pt.x, pt.y, 1.5, 0, Math.PI*2);
+      tunnelCtx.fillStyle = p.tunneled
+        ? `rgba(57,255,20,${a})`
+        : p.bounced
+          ? `rgba(255,45,120,${a})`
+          : `rgba(0,229,255,${a})`;
+      tunnelCtx.fill();
+    });
+
+    // Particle
+    const color = p.tunneled ? '#39ff14' : p.bounced ? '#ff2d78' : '#00e5ff';
+    tunnelCtx.beginPath();
+    tunnelCtx.arc(p.x, p.y, 4, 0, Math.PI*2);
+    tunnelCtx.fillStyle = color;
+    tunnelCtx.shadowBlur = 10; tunnelCtx.shadowColor = color;
+    tunnelCtx.fill(); tunnelCtx.shadowBlur = 0;
+
+    return p.x > -20 && p.x < W + 20 && p.alpha > 0;
+  });
+
+  tunnelAnim = requestAnimationFrame(drawTunnel);
+}
+
+// ═══════════════════════════════════════
+// EXPERIMENT 5: HEISENBERG
+// ═══════════════════════════════════════
+const heisCanvas = document.getElementById('heis-canvas');
+const heisCtx = heisCanvas.getContext('2d');
+let heisDrag = false, heisVal = 0.5;
+let heisAnim;
+
+function initHeis() {
+  resizeCanvas(heisCanvas);
+
+  heisCanvas.addEventListener('mousedown', e => { heisDrag = true; updateHeis(e); });
+  heisCanvas.addEventListener('mousemove', e => { if(heisDrag) updateHeis(e); });
+  heisCanvas.addEventListener('mouseup',   () => { heisDrag = false; });
+  heisCanvas.addEventListener('touchstart', e => { heisDrag = true; updateHeis(e.touches[0]); e.preventDefault(); });
+  heisCanvas.addEventListener('touchmove',  e => { updateHeis(e.touches[0]); e.preventDefault(); });
+  heisCanvas.addEventListener('touchend',   () => { heisDrag = false; });
+
+  drawHeis();
+}
+
+function updateHeis(e) {
+  const rect = heisCanvas.getBoundingClientRect();
+  heisVal = Math.max(0.02, Math.min(0.98, (e.clientX - rect.left) / rect.width));
+  const posPrec = Math.round(heisVal * 100);
+  const momPrec = Math.round((1-heisVal) * 100);
+  document.getElementById('heis-status').textContent =
+    `POSITION CERTAINTY: ${posPrec}% | MOMENTUM CERTAINTY: ${momPrec}% | ΔxΔp ≥ ℏ/2`;
+}
+
+function drawHeis() {
+  const W = heisCanvas.offsetWidth, H = heisCanvas.offsetHeight;
+  heisCtx.fillStyle = 'rgba(7,9,26,0.3)';
+  heisCtx.fillRect(0,0,W,H);
+
+  const t = Date.now()/1000;
+  const posUncert = 1 - heisVal;
+  const momUncert = heisVal;
+
+  // Draw wavefunction
+  heisCtx.beginPath();
+  const wavePoints = [];
+  for (let x = 0; x < W; x++) {
+    const norm = (x/W - heisVal);
+    const envelope = Math.exp(-(norm*norm)/(2*(posUncert*0.25+0.02)*(posUncert*0.25+0.02)));
+    const freq = 8 + momUncert * 60;
+    const wave = envelope * Math.sin(x * freq * 0.05 + t*3) * (H*0.35);
+    wavePoints.push({x, y: H/2 + wave});
+  }
+
+  // Glow effect — draw multiple times
+  for (let g = 3; g >= 0; g--) {
+    heisCtx.beginPath();
+    heisCtx.moveTo(wavePoints[0].x, wavePoints[0].y);
+    wavePoints.forEach(p => heisCtx.lineTo(p.x, p.y));
+    heisCtx.strokeStyle = `rgba(255,215,0,${0.15 * (4-g)})`;
+    heisCtx.lineWidth = g * 2 + 1;
+    heisCtx.stroke();
+  }
+
+  // Labels
+  heisCtx.font = '10px "Share Tech Mono"';
+  heisCtx.fillStyle = 'rgba(255,215,0,0.6)';
+  heisCtx.fillText('POSITION', 12, 20);
+  heisCtx.fillStyle = `rgba(255,215,0,${heisVal})`;
+  heisCtx.fillText('CERTAIN ◄', 12, 34);
+
+  heisCtx.fillStyle = 'rgba(255,215,0,0.6)';
+  heisCtx.textAlign = 'right';
+  heisCtx.fillText('MOMENTUM', W-12, 20);
+  heisCtx.fillStyle = `rgba(255,215,0,${1-heisVal})`;
+  heisCtx.fillText('► CERTAIN', W-12, 34);
+  heisCtx.textAlign = 'left';
+
+  // Drag handle
+  const handleX = heisVal * W;
+  heisCtx.beginPath();
+  heisCtx.moveTo(handleX, 0); heisCtx.lineTo(handleX, H);
+  heisCtx.strokeStyle = 'rgba(255,215,0,0.3)';
+  heisCtx.lineWidth = 1; heisCtx.setLineDash([4,6]);
+  heisCtx.stroke(); heisCtx.setLineDash([]);
+
+  heisCtx.beginPath();
+  heisCtx.arc(handleX, H/2, 8, 0, Math.PI*2);
+  heisCtx.fillStyle = '#ffd700';
+  heisCtx.shadowBlur = 15; heisCtx.shadowColor = '#ffd700';
+  heisCtx.fill(); heisCtx.shadowBlur = 0;
+
+  heisCtx.font = '9px "Share Tech Mono"';
+  heisCtx.fillStyle = '#000';
+  heisCtx.textAlign = 'center';
+  heisCtx.fillText('◄►', handleX, H/2 + 3);
+  heisCtx.textAlign = 'left';
+
+  heisAnim = requestAnimationFrame(drawHeis);
+}
+
+// ═══════════════════════════════════════
+// INIT ALL
+// ═══════════════════════════════════════
+window.addEventListener('load', () => {
+  initSlit();
+  initEnt();
+  initCat();
+  initTunnel();
+  initHeis();
+});
+
+window.addEventListener('resize', () => {
+  cancelAnimationFrame(slitAnim);
+  cancelAnimationFrame(entAnim);
+  cancelAnimationFrame(catAnim);
+  cancelAnimationFrame(tunnelAnim);
+  cancelAnimationFrame(heisAnim);
+  setTimeout(() => {
+    initSlit();
+    initEnt();
+    initCat();
+    initTunnel();
+    initHeis();
+  }, 100);
+});
+</script>
+</body>
+</html>
