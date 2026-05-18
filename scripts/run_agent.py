@@ -217,18 +217,27 @@ ITEMS:
                      or c.get("title","")[:35].lower() in it["title"].lower()),
                     None,
                 )
+                # Always prefer original URL from our feed — never trust Gemini's URL
                 if original:
                     c["url"]    = original["url"]
                     c["source"] = original["source"]
-                elif not c.get("url") or c.get("url") == "None":
-                    # Find any item with similar words as fallback
+                else:
+                    # Fallback: find best title match from batch
                     words = set(c.get("title","").lower().split())
-                    best = max(batch_items, 
+                    best = max(batch_items,
                         key=lambda it: len(words & set(it["title"].lower().split())),
                         default=None)
                     if best:
                         c["url"]    = best["url"]
                         c["source"] = best["source"]
+                # Final safety check — must be a real URL
+                if not c.get("url","").startswith("http"):
+                    best = max(batch_items,
+                        key=lambda it: len(set(c.get("title","").lower().split()) & set(it["title"].lower().split())),
+                        default=batch_items[0])
+                    c["url"]    = best["url"]
+                    c["source"] = best["source"]
+                print(f"  → {c['title'][:50]} | {c['url'][:60]}")
                 c["score"]     = max(1, min(10, int(c.get("score", 7))))
                 c["chain_tag"] = c.get("chain_tag", "models").lower()
                 if c["chain_tag"] not in ("chips","cloud","models","tools","apps"):
