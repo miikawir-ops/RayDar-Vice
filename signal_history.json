@@ -165,5 +165,20 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-05-22",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google redesigns search box after 25 years, integrating AI directly",
+        "summary": "Google's first search box redesign in 25 years embeds AI directly into the primary interface, fundamentally changing information retrieval.",
+        "so_what": "This move solidifies Google's AI integration into its core product, intensifying competition in AI-powered search.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
   }
 ]
