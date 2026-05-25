@@ -250,5 +250,20 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-05-25",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years",
+        "summary": "Google is overhauling its iconic search box, directly embedding generative AI into the core search experience for billions of users.",
+        "so_what": "This redefines the search paradigm, intensifying competition in AI-powered information retrieval and impacting user engagement.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
   }
 ]
