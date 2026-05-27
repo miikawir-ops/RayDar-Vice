@@ -290,5 +290,40 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-05-27",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years, integrating AI",
+        "summary": "Google's fundamental search box redesign integrates generative AI, moving beyond traditional blue links for query results.",
+        "so_what": "This redefines user interaction with search, solidifying Google's AI-first strategy and impacting the entire search market.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Salesforce launches rebuilt Slackbot AI agent for workplace",
+        "summary": "Salesforce transforms Slackbot into a full AI agent, capable of enterprise data search, drafting documents, and taking action.",
+        "so_what": "Intensifies the battle for enterprise AI productivity, directly challenging Microsoft Copilot and Google Workspace AI.",
+        "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Anthropic launches Cowork, a Claude Desktop agent for non-technical users",
+        "summary": "Anthropic's Cowork extends Claude's power to mainstream users with a desktop agent for file interaction, no coding needed.",
+        "so_what": "This democratizes AI agent capabilities, expanding Anthropic's market reach beyond developers and setting new user experience standards.",
+        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "source": "AI | VentureBeat"
+      }
+    ]
   }
 ]
