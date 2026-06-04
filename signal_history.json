@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-05-21",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years",
-        "summary": "Google's first search box redesign in 25 years signals deep AI integration, moving beyond blue links to generative answers.",
-        "so_what": "This fundamentally alters how billions interact with information, shifting competitive dynamics in the AI-powered search application space.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway raises $100M for AI-native cloud infrastructure",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, aiming to challenge AWS by addressing legacy cloud limitations.",
-        "so_what": "This significant funding for an AI-native cloud platform could disrupt the CLOUD layer, offering specialized compute alternatives to hyperscalers.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Anthropic launches Cowork, a Claude Desktop agent",
-        "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-technical users, enabling direct file interaction without coding.",
-        "so_what": "This broadens AI agent accessibility beyond developers, significantly impacting the APPS layer by bringing powerful AI to mainstream productivity.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-05-22",
     "items": [
       {
@@ -334,6 +299,31 @@
         "title": "Google redesigns search box after 25 years, integrating AI",
         "summary": "Google's radical search box redesign embeds AI directly, fundamentally altering user interaction with information.",
         "so_what": "This shifts competitive dynamics in consumer search, setting a new standard for AI integration in core applications.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Anthropic launches Cowork, Claude AI agent for non-coders",
+        "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-technical users, working directly with files without coding.",
+        "so_what": "This democratizes AI agent access, significantly expanding the APPS market and setting a new bar for user-friendliness.",
+        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years, integrating AI",
+        "summary": "Google's core search box gets its first major redesign in 25 years, deeply embedding AI for a more conversational experience.",
+        "so_what": "This fundamentally redefines information retrieval for billions, impacting user behavior and competitive dynamics in search.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
