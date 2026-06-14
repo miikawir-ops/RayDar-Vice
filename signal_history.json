@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-05-31",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years, integrating AI deeply",
-        "summary": "Google's major search box redesign at I/O signals a shift to AI-first interaction, moving beyond traditional blue links.",
-        "so_what": "This fundamentally alters user interaction with Google Search, intensifying competition in AI-driven information access.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-06-01",
     "items": [
       {
@@ -253,6 +238,21 @@
         "title": "Google redesigns search box after 25 years, integrating AI",
         "summary": "Google's first search box redesign in 25 years deeply embeds AI, transforming how billions of users interact with information.",
         "so_what": "This fundamentally redefines the user experience for the world's most popular search engine, setting a new standard for AI integration in core apps.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-14",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years with AI integration",
+        "summary": "Google's major search box redesign integrates AI, fundamentally changing user interaction with its core product.",
+        "so_what": "Shifts how billions interact with search, intensifying competition in AI-powered information retrieval.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
