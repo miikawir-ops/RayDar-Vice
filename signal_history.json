@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-06-04",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Anthropic launches Cowork, Claude AI agent for non-coders",
-        "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-technical users, working directly with files without coding.",
-        "so_what": "This democratizes AI agent access, significantly expanding the APPS market and setting a new bar for user-friendliness.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's core search box gets its first major redesign in 25 years, deeply embedding AI for a more conversational experience.",
-        "so_what": "This fundamentally redefines information retrieval for billions, impacting user behavior and competitive dynamics in search.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-06-05",
     "items": [
       {
@@ -317,5 +292,9 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-06-18",
+    "items": []
   }
 ]
