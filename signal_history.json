@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-06-06",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years with AI integration",
-        "summary": "Google's major search box redesign, integrating AI directly, fundamentally alters how billions of users interact with information.",
-        "so_what": "This shifts competitive dynamics for information retrieval, content discovery, and ad revenue across the internet.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-06-07",
     "items": [
       {
@@ -293,6 +278,21 @@
         "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-coders, enabling direct file interaction.",
         "so_what": "This democratizes AI agent use, broadening market access and intensifying the race for general-purpose AI assistants.",
         "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-20",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years, integrating AI directly",
+        "summary": "Google's radical search box redesign integrates AI directly, moving beyond blue links to provide immediate answers and agentic capabilities.",
+        "so_what": "This redefines the user experience for billions, shifting competitive dynamics in information retrieval and AI-powered interaction.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
     ]
