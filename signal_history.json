@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-06-09",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's I/O announcement reveals a sweeping redesign of its iconic search box, embedding AI directly into the user interface.",
-        "so_what": "This fundamentally shifts how billions interact with information, impacting Google's core business and competitive dynamics in AI-powered applications.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-06-10",
     "items": [
       {
@@ -296,5 +281,9 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-06-23",
+    "items": []
   }
 ]
