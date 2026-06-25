@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-06-11",
-    "items": []
-  },
-  {
     "date": "2026-06-12",
     "items": [
       {
@@ -302,6 +298,31 @@
         "summary": "Anthropic's Cowork extends Claude Code's power to non-technical users via a desktop agent, enabling file interaction without coding.",
         "so_what": "This significantly broadens AI agent accessibility, pushing mainstream adoption and challenging competitors to deliver intuitive, non-coding AI experiences.",
         "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-25",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years with AI integration",
+        "summary": "Google's first search box redesign in 25 years deeply integrates AI, transforming how billions interact with information.",
+        "so_what": "This fundamentally shifts user expectations for AI in consumer applications, solidifying Google's position in AI-powered search.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Salesforce launches advanced Slackbot AI agent",
+        "summary": "Salesforce transformed Slackbot into a full AI agent, capable of enterprise data search and action, intensifying workplace AI competition.",
+        "so_what": "This move escalates the battle among enterprise giants (Salesforce, Microsoft, Google) to dominate the AI agent layer in the workplace.",
+        "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
         "source": "AI | VentureBeat"
       }
     ]
