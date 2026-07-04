@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-06-20",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years, integrating AI directly",
-        "summary": "Google's radical search box redesign integrates AI directly, moving beyond blue links to provide immediate answers and agentic capabilities.",
-        "so_what": "This redefines the user experience for billions, shifting competitive dynamics in information retrieval and AI-powered interaction.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-06-21",
     "items": [
       {
@@ -333,6 +318,21 @@
         "title": "Google redesigns search box after 25 years, integrating AI",
         "summary": "Google's core search interface gets a major overhaul, moving beyond blue links to integrate AI directly into query results.",
         "so_what": "This fundamentally shifts how billions interact with information, embedding AI deeper into daily user experience and search monetization.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-04",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google redesigns search box after 25 years, integrating AI",
+        "summary": "Google's fundamental search box redesign signals a major shift in user interaction with AI-powered search.",
+        "so_what": "This redefines how billions access information, intensifying competition in AI-driven search experiences.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
