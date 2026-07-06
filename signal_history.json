@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-06-22",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years",
-        "summary": "Google's first search box redesign in 25 years integrates generative AI, fundamentally changing how users interact with search.",
-        "so_what": "This redefines core search, leveraging AI for direct answers, shifting user behavior and competitive dynamics in information retrieval.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-06-23",
     "items": []
   },
@@ -314,6 +299,41 @@
         "summary": "Google's core search interface is fundamentally changing, moving beyond blue links to deeply embed AI for query responses.",
         "so_what": "This redefines how billions access information, shifting competitive dynamics in search and AI delivery.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-06",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google redesigns search box after 25 years",
+        "summary": "Google's first search box redesign in 25 years signals a major shift in user interaction, likely driven by AI integration.",
+        "so_what": "This fundamentally alters how billions interact with search, pushing AI-powered results and potentially changing web discovery.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "Railway raises $100M for AI-native cloud infrastructure",
+        "summary": "Railway secured $100M Series B funding to build AI-native cloud infrastructure, challenging hyperscalers like AWS.",
+        "so_what": "This investment fuels a specialized cloud competitor, potentially shifting AI compute workloads away from legacy providers.",
+        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Anthropic launches Cowork, a Claude Desktop agent for non-coders",
+        "summary": "Anthropic's Cowork extends Claude's AI agent capabilities to non-technical users, working directly with desktop files.",
+        "so_what": "This democratizes AI agent access, significantly expanding the market for AI applications beyond developers.",
+        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
         "source": "AI | VentureBeat"
       }
     ]
