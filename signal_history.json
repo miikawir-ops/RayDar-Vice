@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-07-02",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's major search box redesign at I/O signals a fundamental shift to AI-driven information access, moving beyond blue links.",
-        "so_what": "This redefines user interaction with search, impacting advertising models and competitive search engine strategies globally.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway raises $100M to challenge AWS with AI-native cloud",
-        "summary": "Railway secured $100M for its AI-native cloud infrastructure, attracting 2M developers and directly challenging hyperscalers.",
-        "so_what": "This funding and traction signal a significant emerging player in AI-optimized cloud, pressuring compute pricing and availability.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-03",
     "items": [
       {
@@ -273,6 +248,21 @@
         "title": "Google redesigns search box after 25 years for AI era",
         "summary": "Google's major search box redesign signals a fundamental shift in how billions interact with information, driven by AI.",
         "so_what": "This redefines information access, impacting user experience, advertising, and competitive dynamics in the APPS layer.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box, shifting information retrieval paradigm",
+        "summary": "Google's first search box redesign in 25 years signals a fundamental shift from blue links to AI-generated answers, impacting billions.",
+        "so_what": "This redefines user interaction with information, profoundly impacting Google's core business and the competitive search landscape.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
