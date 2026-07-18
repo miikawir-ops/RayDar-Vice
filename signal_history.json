@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-07-04",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's fundamental search box redesign signals a major shift in user interaction with AI-powered search.",
-        "so_what": "This redefines how billions access information, intensifying competition in AI-driven search experiences.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-05",
     "items": [
       {
@@ -284,6 +269,41 @@
         "summary": "Enterprises are deploying AI agents despite low trust in internal evaluations, leading to production failures and misalignment.",
         "so_what": "This demands better evaluation TOOLS and practices, fundamentally impacting trust and successful APPS deployment.",
         "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-18",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "The agent security gap: Over half of enterprises had incidents, agents share creds",
+        "summary": "Over half of enterprises experienced an AI agent security incident, with most agents still sharing credentials, exposing critical systems and data.",
+        "so_what": "This severe security vulnerability demands immediate attention, creating a new competitive battleground for secure AI agent development and deployment.",
+        "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box, integrating AI answers directly",
+        "summary": "Google's first search box redesign in 25 years embeds AI-driven answers directly, fundamentally altering how users interact with search.",
+        "so_what": "This move dramatically shifts the consumer AI application landscape, pushing AI to the forefront of information retrieval and challenging traditional search paradigms.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "The agent evaluation gap: Enterprises ship agents despite poor eval alignment",
+        "summary": "Enterprises are deploying AI agents with increasing autonomy, yet their evaluations frequently fail to predict real-world production outcomes.",
+        "so_what": "This gap creates significant enterprise risk and trust issues, slowing adoption and favoring vendors who can prove real-world agent reliability.",
+        "url": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway",
         "source": "AI | VentureBeat"
       }
     ]
