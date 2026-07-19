@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-07-05",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years",
-        "summary": "Google's core search interface is fundamentally changing, moving beyond blue links to deeply embed AI for query responses.",
-        "so_what": "This redefines how billions access information, shifting competitive dynamics in search and AI delivery.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-06",
     "items": [
       {
@@ -304,6 +289,41 @@
         "summary": "Enterprises are deploying AI agents with increasing autonomy, yet their evaluations frequently fail to predict real-world production outcomes.",
         "so_what": "This gap creates significant enterprise risk and trust issues, slowing adoption and favoring vendors who can prove real-world agent reliability.",
         "url": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Agent security gap: 54% of enterprises had an AI agent incident",
+        "summary": "Over half of enterprises experienced an AI agent security incident, with most still sharing credentials and lacking isolation.",
+        "so_what": "This critical security gap will slow agent deployment and create a new, urgent market for AI security solutions.",
+        "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years, integrating AI",
+        "summary": "Google's major search box redesign, integrating AI, fundamentally alters user interaction and information discovery.",
+        "so_what": "This shifts user expectations for search and forces competitors to adapt to a new AI-powered paradigm.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "Enterprises buy AI infra faster than they measure costs",
+        "summary": "AI infrastructure spending accelerates beyond cost visibility, with many planning to switch or add providers soon.",
+        "so_what": "This creates opportunities for AI FinOps solutions and indicates intense competition among cloud providers.",
+        "url": "https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs",
         "source": "AI | VentureBeat"
       }
     ]
