@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-07-09",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Anthropic's Cowork agent brings Claude to non-technical users",
-        "summary": "Anthropic launched Cowork, a desktop AI agent extending Claude's power to non-coders, built rapidly using Claude Code itself.",
-        "so_what": "This significantly broadens AI agent adoption beyond developers, intensifying competition in the mainstream APPS market.",
-        "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-10",
     "items": [
       {
@@ -314,6 +299,21 @@
         "summary": "Google's radical search box redesign signals a major shift in how users interact with information, moving beyond traditional links.",
         "so_what": "This redefines the primary internet interface, profoundly impacting content, advertising, and information consumption for billions.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Critical AI Agent Security Gap Revealed",
+        "summary": "Over half of enterprises faced AI agent incidents, with most still allowing agents to share credentials, creating major vulnerabilities.",
+        "so_what": "This security crisis demands immediate attention, driving demand for specialized AI security tools and robust identity management for agents.",
+        "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
         "source": "AI | VentureBeat"
       }
     ]
