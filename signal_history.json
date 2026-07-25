@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-07-11",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google's Search Box Redesign Signals Major AI Integration",
-        "summary": "Google's first search box redesign in 25 years integrates AI deeply, transforming how billions interact with information.",
-        "so_what": "This redefines consumer search, pushing AI into the core user experience and impacting competitive dynamics in information access.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway Raises $100M for AI-Native Cloud Infrastructure",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, aiming to challenge AWS and legacy hyperscalers.",
-        "so_what": "This funding introduces a significant challenger in the cloud layer, potentially driving innovation and competition in AI compute.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Anthropic Launches Cowork: Claude AI Agent for Non-Technical Users",
-        "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-technical users, allowing AI interaction directly with files without coding.",
-        "so_what": "This democratizes advanced AI agent access, significantly expanding the market for AI applications beyond developers and technical users.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-12",
     "items": []
   },
@@ -294,6 +259,41 @@
         "summary": "Google's 25-year search box paradigm shifts, integrating AI directly into the user experience.",
         "so_what": "This fundamentally changes how billions access information and consume AI, impacting the competitive landscape of search.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-25",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google Search redesign after 25 years",
+        "summary": "Google I/O unveils a sweeping redesign of its core search box, integrating AI to retire the old blue-link paradigm.",
+        "so_what": "This fundamental shift in search UI will redefine how billions interact with information, impacting user behavior and competitive dynamics.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "Railway raises $100M for AI-native cloud",
+        "summary": "Railway secures $100M to build AI-native cloud infrastructure, challenging AWS due to surging AI demand.",
+        "so_what": "This funding signals a new competitive front in cloud infrastructure, potentially shifting compute pricing and capacity for AI workloads.",
+        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Anthropic launches Cowork desktop AI agent",
+        "summary": "Anthropic extends Claude Code's power to non-technical users with Cowork, a desktop AI agent for file interaction.",
+        "so_what": "This launch significantly broadens the market for AI agents, accelerating mainstream adoption by removing coding barriers for users.",
+        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
         "source": "AI | VentureBeat"
       }
     ]
