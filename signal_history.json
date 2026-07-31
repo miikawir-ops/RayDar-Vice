@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-07-17",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Agent Security Gap: 54% of enterprises had an incident, most share credentials",
-        "summary": "Over half of enterprises experienced an AI agent security incident, with many still sharing credentials, highlighting critical vulnerabilities.",
-        "so_what": "This forces enterprises to overhaul agent security, driving demand for new TOOLS and impacting APPS deployment viability.",
-        "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 7,
-        "title": "Railway raises $100M to challenge AWS with AI-native cloud infrastructure",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, aiming to disrupt hyperscalers with specialized compute.",
-        "so_what": "This introduces a significant new competitor in the CLOUD layer, offering AI-optimized alternatives to established providers.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 7,
-        "title": "Agent Evaluation Gap: Enterprises ship agents despite distrusting evaluations",
-        "summary": "Enterprises are deploying AI agents despite low trust in internal evaluations, leading to production failures and misalignment.",
-        "so_what": "This demands better evaluation TOOLS and practices, fundamentally impacting trust and successful APPS deployment.",
-        "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-18",
     "items": [
       {
@@ -374,6 +339,21 @@
         "summary": "Anthropic's Cowork extends Claude Code's power to non-technical users, enabling file interaction without coding.",
         "so_what": "This democratizes AI agent capabilities, accelerating mainstream adoption and intensifying competition for user-friendly AI tools.",
         "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-31",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google redesigns search box for first time in 25 years, integrating AI",
+        "summary": "Google's iconic search box undergoes its first major redesign in 25 years, deeply integrating generative AI into the core user experience.",
+        "so_what": "This monumental shift redefines user interaction with information, fundamentally altering how businesses reach customers and monetize content.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
     ]
