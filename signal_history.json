@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-07-24",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box, integrating AI",
-        "summary": "Google's 25-year search box paradigm shifts, integrating AI directly into the user experience.",
-        "so_what": "This fundamentally changes how billions access information and consume AI, impacting the competitive landscape of search.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-25",
     "items": [
       {
@@ -323,6 +308,21 @@
         "summary": "Salesforce rebuilt Slackbot into a full AI agent for enterprise data search and action, intensifying workplace AI competition.",
         "so_what": "This move escalates the battle for enterprise AI adoption, directly challenging Microsoft and Google in a critical market.",
         "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years",
+        "summary": "Google's core search interface gets a sweeping redesign, signaling deep AI integration into its most iconic product.",
+        "so_what": "This fundamentally alters user interaction with search, leveraging AI to redefine information discovery and Google's market position.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
     ]
