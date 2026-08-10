@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-27",
-    "items": []
-  },
-  {
     "date": "2026-07-28",
     "items": [
       {
@@ -282,6 +278,21 @@
         "title": "Google redesigns search box after 25 years for AI integration",
         "summary": "Google's first search box redesign in 25 years signals a fundamental shift to AI-driven information access.",
         "so_what": "This redefines user interaction with search, embedding AI directly and shifting competitive dynamics in information access.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google redesigns search box after 25 years with AI integration",
+        "summary": "Google's first search box redesign in 25 years deeply integrates AI, moving beyond traditional blue links for information access.",
+        "so_what": "This fundamentally alters user interaction with information, shifting competitive dynamics in the search application layer.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
