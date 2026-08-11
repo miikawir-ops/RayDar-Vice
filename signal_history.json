@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-07-28",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's first search box redesign in 25 years signals a major shift towards AI-driven information access.",
-        "so_what": "This fundamentally alters user interaction with search, impacting ad models and competitive landscape for information retrieval.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Anthropic launches Cowork, a Claude Desktop agent for non-technical users",
-        "summary": "Anthropic's Cowork extends Claude's agent capabilities to desktop users without coding, built rapidly using Claude Code.",
-        "so_what": "This democratizes AI agent access for mainstream users, accelerating adoption and intensifying competition in user-facing AI.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway raises $100M to challenge AWS with AI-native cloud",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, aiming to address limitations of legacy hyperscalers.",
-        "so_what": "This funding fuels a direct challenge to major cloud providers, potentially shifting compute allocation and pricing for AI workloads.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-29",
     "items": [
       {
@@ -297,5 +262,9 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-08-11",
+    "items": []
   }
 ]
