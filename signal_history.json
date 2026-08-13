@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-07-30",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google's 25-year search box redesign",
-        "summary": "Google redesigned its search box, integrating AI to fundamentally change how billions of users interact with information.",
-        "so_what": "This redefines user interaction with search, pushing AI-first interfaces and intensifying competition in information access.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "K-Search bridges CUDA expertise to Apple Silicon's MLX",
-        "summary": "K-Search translates CUDA optimization knowledge to Apple Silicon's MLX, enabling high-performance AI on Apple hardware.",
-        "so_what": "This empowers Apple Silicon in the AI hardware race, reducing reliance on NVIDIA's ecosystem for AI development.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Anthropic launches Cowork, Claude Desktop agent for all",
-        "summary": "Anthropic's Cowork extends Claude Code's power to non-technical users, enabling file interaction without coding.",
-        "so_what": "This democratizes AI agent capabilities, accelerating mainstream adoption and intensifying competition for user-friendly AI tools.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-07-31",
     "items": [
       {
@@ -235,5 +200,20 @@
   {
     "date": "2026-08-12",
     "items": []
+  },
+  {
+    "date": "2026-08-13",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google Search box redesign",
+        "summary": "Google has fundamentally redesigned its iconic search box, integrating AI directly into the user interface after 25 years.",
+        "so_what": "This move redefines search interaction, leveraging AI to deliver more direct answers and potentially shifting market share.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
   }
 ]
