@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-07-31",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box for first time in 25 years, integrating AI",
-        "summary": "Google's iconic search box undergoes its first major redesign in 25 years, deeply integrating generative AI into the core user experience.",
-        "so_what": "This monumental shift redefines user interaction with information, fundamentally altering how businesses reach customers and monetize content.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-01",
     "items": [
       {
@@ -211,6 +196,21 @@
         "title": "Google Search box redesign",
         "summary": "Google has fundamentally redesigned its iconic search box, integrating AI directly into the user interface after 25 years.",
         "so_what": "This move redefines search interaction, leveraging AI to deliver more direct answers and potentially shifting market share.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-14",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google Search box redesign",
+        "summary": "Google unveiled a major redesign of its search box at I/O, retiring the 25-year-old paradigm for an AI-integrated experience.",
+        "so_what": "This fundamentally alters how billions interact with information, leveraging AI to redefine search and strengthen Google's market dominance.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
