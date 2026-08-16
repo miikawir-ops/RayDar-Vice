@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-08-02",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 9,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's major search box redesign at I/O signals a fundamental shift in how billions interact with information, embedding AI directly into search.",
-        "so_what": "This redefines the user experience for a core internet application, setting a new standard for AI integration in consumer products and services.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-03",
     "items": [
       {
@@ -211,6 +196,21 @@
         "title": "Google's 25-year search box redesign signals deep AI integration",
         "summary": "Google's I/O unveiled a sweeping search box redesign, retiring the old paradigm for AI-driven information access.",
         "so_what": "This fundamentally redefines user interaction with search, intensifying competition in AI-powered information retrieval.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-16",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 9,
+        "title": "Google redesigns search box after 25 years",
+        "summary": "Google's search box redesign at I/O integrates AI, fundamentally changing information access and user interaction.",
+        "so_what": "This redefines the primary AI application for billions, impacting user behavior and competitive dynamics in information discovery.",
         "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
         "source": "AI | VentureBeat"
       }
