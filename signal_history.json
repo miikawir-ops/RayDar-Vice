@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-08-04",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway raises $100M for AI-native cloud, challenging AWS",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, addressing limitations of legacy hyperscalers for AI applications.",
-        "so_what": "This funding signals a growing market for specialized AI cloud infrastructure, potentially disrupting the dominance of existing hyperscalers.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-05",
     "items": []
   },
@@ -195,5 +180,9 @@
         "source": "AI | VentureBeat"
       }
     ]
+  },
+  {
+    "date": "2026-08-18",
+    "items": []
   }
 ]
