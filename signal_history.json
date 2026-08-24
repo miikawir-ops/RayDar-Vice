@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-08-10",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box after 25 years with AI integration",
-        "summary": "Google's first search box redesign in 25 years deeply integrates AI, moving beyond traditional blue links for information access.",
-        "so_what": "This fundamentally alters user interaction with information, shifting competitive dynamics in the search application layer.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-11",
     "items": []
   },
@@ -211,6 +196,41 @@
         "title": "Anthropic launches Cowork, a Claude Desktop AI agent for non-technical users",
         "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-coders, enabling direct file interaction and broadening AI agent adoption.",
         "so_what": "This launch marks a major step in bringing powerful AI agents to mainstream users, expanding the market beyond developers.",
+        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+        "source": "AI | VentureBeat"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Google redesigns search box with AI after 25 years",
+        "summary": "Google's iconic search box gets its first redesign in 25 years, deeply integrating AI into the core search experience.",
+        "so_what": "This fundamentally shifts user interaction with search, embedding generative AI directly into Google's most ubiquitous product.",
+        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Salesforce launches new Slackbot AI agent, battles rivals",
+        "summary": "Salesforce transforms Slackbot into a full AI agent for enterprise data search, drafting, and actions.",
+        "so_what": "Intensifies the battle for workplace AI, positioning Slack as a key AI-powered productivity hub against major competitors.",
+        "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+        "source": "AI | VentureBeat"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "Anthropic launches Claude Cowork, desktop AI agent for all users",
+        "summary": "Anthropic extends Claude's agent capabilities to non-technical users with Cowork, enabling file-based work without coding.",
+        "so_what": "Democratizes AI agent access, significantly broadening the market and intensifying competition in mainstream AI applications.",
         "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
         "source": "AI | VentureBeat"
       }
