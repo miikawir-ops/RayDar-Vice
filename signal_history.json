@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-08-23",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's first search box redesign in 25 years signals a deep integration of AI into its core product, changing user interaction.",
-        "so_what": "This move by Google fundamentally shifts how billions interact with AI, embedding it directly into the world's most used application.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway raises $100M for AI-native cloud, challenging hyperscalers",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, aiming to address legacy cloud limitations for AI applications.",
-        "so_what": "This funding signals a new wave of specialized cloud providers emerging to compete with hyperscalers for AI workloads.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Anthropic launches Cowork, a Claude Desktop AI agent for non-technical users",
-        "summary": "Anthropic's Cowork extends Claude's agent capabilities to non-coders, enabling direct file interaction and broadening AI agent adoption.",
-        "so_what": "This launch marks a major step in bringing powerful AI agents to mainstream users, expanding the market beyond developers.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-24",
     "items": [
       {
@@ -465,6 +430,31 @@
         "summary": "Advanced memory and storage infrastructure are critical engines for real-time AI inference and continuous intelligence.",
         "so_what": "Innovations in this foundational layer directly impact AI system performance, cost, and scalability across the entire value chain.",
         "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
+        "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-06",
+    "items": [
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "HydraFusion Boosts Copilot Quality",
+        "summary": "HydraFusion uses multi-model orchestration to achieve frontier quality and cost reduction for coding, now in GitHub Copilot.",
+        "so_what": "This significantly enhances AI coding assistants, setting new benchmarks for efficiency and impacting developer productivity.",
+        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+        "source": "The latest on AI & ML - The GitHub Blog"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 7,
+        "title": "Scaling Agentic AI in Enterprise",
+        "summary": "Enterprises struggle to scale agentic AI from pilots to production, despite high adoption, revealing a critical deployment bottleneck.",
+        "so_what": "Solving agentic AI scaling will unlock significant enterprise value, shifting competitive advantage for solution providers.",
+        "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
         "source": "MIT Technology Review"
       }
     ]
