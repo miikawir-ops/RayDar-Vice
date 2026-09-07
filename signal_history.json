@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-08-24",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box with AI after 25 years",
-        "summary": "Google's iconic search box gets its first redesign in 25 years, deeply integrating AI into the core search experience.",
-        "so_what": "This fundamentally shifts user interaction with search, embedding generative AI directly into Google's most ubiquitous product.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Salesforce launches new Slackbot AI agent, battles rivals",
-        "summary": "Salesforce transforms Slackbot into a full AI agent for enterprise data search, drafting, and actions.",
-        "so_what": "Intensifies the battle for workplace AI, positioning Slack as a key AI-powered productivity hub against major competitors.",
-        "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Anthropic launches Claude Cowork, desktop AI agent for all users",
-        "summary": "Anthropic extends Claude's agent capabilities to non-technical users with Cowork, enabling file-based work without coding.",
-        "so_what": "Democratizes AI agent access, significantly broadening the market and intensifying competition in mainstream AI applications.",
-        "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-25",
     "items": [
       {
@@ -455,6 +420,41 @@
         "summary": "Enterprises struggle to scale agentic AI from pilots to production, despite high adoption, revealing a critical deployment bottleneck.",
         "so_what": "Solving agentic AI scaling will unlock significant enterprise value, shifting competitive advantage for solution providers.",
         "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
+        "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-07",
+    "items": [
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 8,
+        "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+        "summary": "HydraFusion achieves frontier AI quality and cost reduction through multi-model orchestration, now a GitHub Copilot research preview.",
+        "so_what": "This innovation shifts model deployment, making high-quality AI more accessible and cost-efficient across the value chain.",
+        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+        "source": "The latest on AI & ML - The GitHub Blog"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 7,
+        "title": "Scaling agentic AI pilots across the enterprise",
+        "summary": "Agentic AI is moving from experimentation to enterprise deployment, facing challenges in integration and safe operation at scale.",
+        "so_what": "Overcoming these scaling hurdles will unlock significant enterprise value, driving the next wave of AI adoption and new tooling.",
+        "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
+        "source": "MIT Technology Review"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 7,
+        "title": "Architecting memory and storage in the AI era",
+        "summary": "Advanced memory and storage infrastructure are critical engines for real-time AI inference and continuous intelligence.",
+        "so_what": "Innovations here directly enhance CHIPS capabilities and CLOUD performance, enabling more complex and efficient AI applications.",
+        "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
         "source": "MIT Technology Review"
       }
     ]
