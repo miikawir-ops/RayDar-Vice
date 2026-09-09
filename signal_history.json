@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-08-26",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 9,
-        "title": "General Intuition raises at $6B for foundation model in robotics",
-        "summary": "Startup secures $6B valuation to build foundation models for generalized AI agents and robotics.",
-        "so_what": "This high valuation signals a major push into foundational AI for physical agents, potentially redefining the MODELS layer.",
-        "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's first search box redesign in 25 years signals deep generative AI integration into its core application.",
-        "so_what": "This fundamentally shifts how billions interact with information, impacting the APPS layer and search engine competition.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "Railway raises $100M to challenge AWS with AI-native cloud",
-        "summary": "Railway secured $100M Series B to build AI-native cloud infrastructure, attracting 2M developers.",
-        "so_what": "This well-funded challenger could genuinely shift compute pricing and availability for AI workloads in the CLOUD layer.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-27",
     "items": [
       {
@@ -427,5 +392,20 @@
   {
     "date": "2026-09-08",
     "items": []
+  },
+  {
+    "date": "2026-09-09",
+    "items": [
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 8,
+        "title": "OpenAI's Math Milestone Sparks Controversy",
+        "summary": "OpenAI claims to have solved a Millennium Prize Problem with AI agents, though the announcement faces accusations.",
+        "so_what": "A genuine solution would be a monumental leap in AI reasoning, setting new benchmarks for model capabilities and competitive advantage.",
+        "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+        "source": "MIT Technology Review"
+      }
+    ]
   }
 ]
