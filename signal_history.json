@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-08-30",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Railway raises $100M to challenge AWS with AI-native cloud",
-        "summary": "Railway secured $100M to build AI-native cloud infrastructure, aiming to disrupt hyperscalers with specialized compute.",
-        "so_what": "This significant funding signals a potent new competitor in the cloud infrastructure market, specifically for AI workloads.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-08-31",
     "items": [
       {
@@ -405,6 +390,21 @@
         "so_what": "Unreliable power infrastructure poses a significant threat to hyperscaler expansion and AI compute availability, demanding urgent solutions.",
         "url": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
         "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "items": [
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 9,
+        "title": "OpenAI's Breakthrough in Mathematics",
+        "summary": "OpenAI claims its agents have solved a major open problem in mathematics, signaling a significant advance in reasoning.",
+        "so_what": "This breakthrough could fundamentally enhance AI's problem-solving across scientific and engineering domains, boosting OpenAI's leadership.",
+        "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+        "source": "AI News & Artificial Intelligence | Tech"
       }
     ]
   }
