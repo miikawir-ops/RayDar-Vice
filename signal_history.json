@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-01",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Railway secures $100M to challenge AWS with AI-native cloud",
-        "summary": "Railway raised $100M Series B for AI-native cloud infrastructure, aiming to disrupt hyperscalers with specialized compute.",
-        "so_what": "This signals a growing market for specialized AI compute, potentially shifting competitive dynamics in the CLOUD layer.",
-        "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "Google redesigns search box after 25 years, integrating AI",
-        "summary": "Google's major search box redesign at I/O integrates AI, fundamentally changing user interaction with its core product.",
-        "so_what": "This massive AI application deployment redefines search, setting new user expectations and competitive benchmarks in APPS.",
-        "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
-        "source": "AI | VentureBeat"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 7,
-        "title": "Agent governance must reside in the data layer for autonomy",
-        "summary": "As AI agents gain autonomy, robust governance in the data layer becomes critical to prevent unauthorized actions.",
-        "so_what": "This architectural shift is crucial for enterprise AI adoption, driving new requirements for APPS and TOOLS development.",
-        "url": "https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer",
-        "source": "AI | VentureBeat"
-      }
-    ]
-  },
-  {
     "date": "2026-09-02",
     "items": [
       {
@@ -384,6 +349,31 @@
         "summary": "OpenAI claims its AI agents have solved a significant open problem in mathematics, indicating a major leap in reasoning capabilities.",
         "so_what": "This pushes the frontier of AI reasoning, potentially accelerating development of more capable and reliable foundation models.",
         "url": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
+        "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "items": [
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 8,
+        "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+        "summary": "HydraFusion achieves frontier quality with multi-model orchestration, reducing costs and now available in GitHub Copilot.",
+        "so_what": "This innovation in developer tools enables cost-efficient high-quality AI solutions, impacting MLOps and application development strategies.",
+        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+        "source": "The latest on AI & ML - The GitHub Blog"
+      },
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 7,
+        "title": "Powering AI is an architecture problem",
+        "summary": "Frequent power grid failures in major data center hubs highlight critical infrastructure challenges for scaling AI compute.",
+        "so_what": "Energy constraints will increasingly dictate hyperscaler expansion and chip design, shifting competitive advantage towards power-efficient solutions.",
+        "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
         "source": "MIT Technology Review"
       }
     ]
