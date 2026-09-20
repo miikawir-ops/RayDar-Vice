@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-09-06",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "HydraFusion Boosts Copilot Quality",
-        "summary": "HydraFusion uses multi-model orchestration to achieve frontier quality and cost reduction for coding, now in GitHub Copilot.",
-        "so_what": "This significantly enhances AI coding assistants, setting new benchmarks for efficiency and impacting developer productivity.",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "source": "The latest on AI & ML - The GitHub Blog"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 7,
-        "title": "Scaling Agentic AI in Enterprise",
-        "summary": "Enterprises struggle to scale agentic AI from pilots to production, despite high adoption, revealing a critical deployment bottleneck.",
-        "so_what": "Solving agentic AI scaling will unlock significant enterprise value, shifting competitive advantage for solution providers.",
-        "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-07",
     "items": [
       {
@@ -343,6 +318,31 @@
         "summary": "Models can now intelligently decompose and parallelize subtasks, boosting efficiency for complex reasoning.",
         "so_what": "This advancement improves LLM performance and cost-effectiveness, enabling more sophisticated AI applications and agentic systems.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Intelligence is Free, Now What?",
+        "summary": "AI inference costs have plummeted 9x-900x, making advanced capabilities widely accessible and enabling new applications.",
+        "so_what": "This massive cost reduction fundamentally reshapes AI economics, lowering barriers for new AI products and services.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 7,
+        "title": "From CUDA to MLX: Kernel Expertise for Apple Silicon",
+        "summary": "Translating CUDA optimization knowledge to Apple's MLX framework boosts Apple Silicon's AI hardware capabilities.",
+        "so_what": "This strengthens Apple's competitive position in AI hardware, offering a viable alternative to NVIDIA's ecosystem.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
