@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-07",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-        "summary": "HydraFusion achieves frontier AI quality and cost reduction through multi-model orchestration, now a GitHub Copilot research preview.",
-        "so_what": "This innovation shifts model deployment, making high-quality AI more accessible and cost-efficient across the value chain.",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "source": "The latest on AI & ML - The GitHub Blog"
-      },
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 7,
-        "title": "Scaling agentic AI pilots across the enterprise",
-        "summary": "Agentic AI is moving from experimentation to enterprise deployment, facing challenges in integration and safe operation at scale.",
-        "so_what": "Overcoming these scaling hurdles will unlock significant enterprise value, driving the next wave of AI adoption and new tooling.",
-        "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
-        "source": "MIT Technology Review"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 7,
-        "title": "Architecting memory and storage in the AI era",
-        "summary": "Advanced memory and storage infrastructure are critical engines for real-time AI inference and continuous intelligence.",
-        "so_what": "Innovations here directly enhance CHIPS capabilities and CLOUD performance, enabling more complex and efficient AI applications.",
-        "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-08",
     "items": []
   },
@@ -346,5 +311,9 @@
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
+  },
+  {
+    "date": "2026-09-21",
+    "items": []
   }
 ]
