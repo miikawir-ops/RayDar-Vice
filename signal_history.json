@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-08",
-    "items": []
-  },
-  {
     "date": "2026-09-09",
     "items": [
       {
@@ -315,5 +311,40 @@
   {
     "date": "2026-09-21",
     "items": []
+  },
+  {
+    "date": "2026-09-22",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen by 9x to 900x in a year, making advanced AI dramatically more accessible.",
+        "so_what": "This democratizes AI access, enabling new business models and intensifying competition among cloud providers and application developers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "APPS",
+        "chain_tag": "apps",
+        "score": 8,
+        "title": "HydraFusion Boosts Copilot Quality, Cuts Costs",
+        "summary": "GitHub Copilot's HydraFusion uses multi-model orchestration to achieve frontier quality coding workflows at reduced cost.",
+        "so_what": "This sets a new standard for AI-assisted development, driving efficiency and quality in software creation and impacting developer tool competition.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/01/grads-2026/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 8,
+        "title": "K-Search Optimizes Apple Silicon for AI",
+        "summary": "K-Search translates CUDA optimization knowledge to Apple's MLX framework, enhancing AI performance on Apple Silicon.",
+        "so_what": "This significantly boosts Apple Silicon's viability for AI development, challenging NVIDIA's CUDA dominance and diversifying hardware options.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
   }
 ]
