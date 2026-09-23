@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-09-09",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "OpenAI's Math Milestone Sparks Controversy",
-        "summary": "OpenAI claims to have solved a Millennium Prize Problem with AI agents, though the announcement faces accusations.",
-        "so_what": "A genuine solution would be a monumental leap in AI reasoning, setting new benchmarks for model capabilities and competitive advantage.",
-        "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-10",
     "items": [
       {
@@ -342,6 +327,31 @@
         "title": "K-Search Optimizes Apple Silicon for AI",
         "summary": "K-Search translates CUDA optimization knowledge to Apple's MLX framework, enhancing AI performance on Apple Silicon.",
         "so_what": "This significantly boosts Apple Silicon's viability for AI development, challenging NVIDIA's CUDA dominance and diversifying hardware options.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Inference costs plummet, enabling new agentic data systems",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x, making intelligence nearly free and prompting new data system designs for agents.",
+        "so_what": "This massive cost reduction fundamentally shifts the economics of AI, driving innovation in agentic applications and pressing cloud compute pricing.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "K-Search bridges CUDA expertise to Apple Silicon MLX",
+        "summary": "New methods translate decades of CUDA kernel optimization knowledge to Apple Silicon's MLX, enabling efficient AI workloads.",
+        "so_what": "This reduces NVIDIA's CUDA moat, allowing alternative hardware like Apple Silicon to become more competitive for AI development.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
