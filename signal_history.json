@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-10",
-    "items": [
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "Startup Recycles Chip Energy with Reversible Computing",
-        "summary": "Vaire Computing develops chips using reversible computing to recycle waste heat, boosting energy efficiency.",
-        "so_what": "This innovation could fundamentally shift chip design, drastically reducing energy consumption for hardware and cloud infrastructure.",
-        "url": "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 7,
-        "title": "OpenAI's Math Milestone & Controversy",
-        "summary": "OpenAI claims its agents solved a Millennium Prize Problem, sparking debate over AI's advanced reasoning capabilities.",
-        "so_what": "This pushes the frontier of AI model capabilities, intensifying the competitive race for advanced reasoning and problem-solving.",
-        "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-        "source": "MIT Technology Review"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 7,
-        "title": "HydraFusion Achieves Frontier Quality via Multi-Model Orchestration",
-        "summary": "GitHub Copilot's HydraFusion matches Opus 5 quality with multi-model orchestration, reducing workflow costs.",
-        "so_what": "Improves developer productivity and cost-efficiency for AI-assisted coding, impacting the competitive landscape for AI tools.",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "source": "The latest on AI & ML - The GitHub Blog"
-      }
-    ]
-  },
-  {
     "date": "2026-09-11",
     "items": [
       {
@@ -353,6 +318,21 @@
         "summary": "New methods translate decades of CUDA kernel optimization knowledge to Apple Silicon's MLX, enabling efficient AI workloads.",
         "so_what": "This reduces NVIDIA's CUDA moat, allowing alternative hardware like Apple Silicon to become more competitive for AI development.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Commodity",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making advanced AI dramatically cheaper.",
+        "so_what": "This fundamental shift enables new applications and business models, increasing demand across the entire AI value chain.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
