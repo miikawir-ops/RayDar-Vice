@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-11",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "OpenAI's Math Milestone & Controversy",
-        "summary": "OpenAI claims to solve a Millennium Prize Problem, sparking debate but highlighting advanced model capabilities.",
-        "so_what": "This pushes the frontier of AI's mathematical reasoning, setting new benchmarks for model intelligence and capability.",
-        "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-        "source": "MIT Technology Review"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 7,
-        "title": "Project HydraFusion: Multi-Model Orchestration for Frontier Quality",
-        "summary": "GitHub Copilot's HydraFusion offers frontier-quality AI workflows at reduced cost via multi-model orchestration.",
-        "so_what": "This significantly improves developer efficiency and cost-effectiveness for building advanced AI applications.",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "source": "The latest on AI & ML - The GitHub Blog"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 7,
-        "title": "Powering AI: The Critical Data Center Architecture Problem",
-        "summary": "Grid failures in major data center hubs like Ashburn, VA, highlight critical power supply challenges for AI compute.",
-        "so_what": "Reliable power infrastructure is becoming a key competitive differentiator for hyperscalers supporting AI workloads.",
-        "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-12",
     "items": [
       {
@@ -332,6 +297,41 @@
         "title": "AI Inference Costs Plummet: Intelligence Becomes Commodity",
         "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making advanced AI dramatically cheaper.",
         "so_what": "This fundamental shift enables new applications and business models, increasing demand across the entire AI value chain.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Intelligence is Free, Now What?",
+        "summary": "Inference costs for GPT-4 class capabilities have plummeted 9x-900x, making AI significantly more affordable.",
+        "so_what": "This massive cost reduction fundamentally alters AI economics, enabling widespread application adoption and impacting cloud compute pricing.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "From CUDA to MLX: Kernel Expertise for Apple Silicon",
+        "summary": "New methods translate CUDA optimization knowledge to MLX, enabling efficient AI workloads on Apple Silicon.",
+        "so_what": "This development challenges NVIDIA's CUDA dominance by optimizing software for alternative hardware, fostering competition in the chips layer.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "Adaptive Parallel Reasoning: Efficient Inference Scaling",
+        "summary": "A new paradigm allows reasoning models to autonomously decompose, parallelize, and coordinate subtasks for efficiency.",
+        "so_what": "This significantly improves the scalability and cost-effectiveness of complex LLM reasoning, making advanced agentic systems practical.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
