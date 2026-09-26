@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-12",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "OpenAI claims breakthrough in solving major math problem",
-        "summary": "OpenAI states its agents have solved a significant open problem in mathematics, signaling a major leap in AI's reasoning capabilities.",
-        "so_what": "This breakthrough could fundamentally alter the trajectory of AI development, opening new frontiers in scientific and complex problem-solving.",
-        "url": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
-        "source": "MIT Technology Review"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 7,
-        "title": "Anthropic researcher warns of superintelligence risks",
-        "summary": "An Anthropic researcher resigned, publicly warning the company is 'racing straight to self-improving superintelligence'.",
-        "so_what": "This internal dissent highlights growing safety concerns within leading model labs, potentially impacting regulatory focus and public trust.",
-        "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 7,
-        "title": "Powering AI: Grid stability challenges for data centers",
-        "summary": "Transmission line faults in major data center hubs reveal critical power grid stability issues impacting AI compute.",
-        "so_what": "Unreliable power infrastructure poses a significant threat to hyperscaler expansion and AI compute availability, demanding urgent solutions.",
-        "url": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-13",
     "items": [
       {
@@ -333,6 +298,41 @@
         "summary": "A new paradigm allows reasoning models to autonomously decompose, parallelize, and coordinate subtasks for efficiency.",
         "so_what": "This significantly improves the scalability and cost-effectiveness of complex LLM reasoning, making advanced agentic systems practical.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummeting",
+        "summary": "The cost of AI inference has fallen dramatically, with GPT-4 class capabilities now costing less than $1 per million tokens.",
+        "so_what": "This profound reduction in compute costs democratizes AI, enabling widespread deployment and unlocking new business models across all layers.",
+        "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+        "source": "AI News & Artificial Intelligence | Tech"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 8,
+        "title": "Meta's Muse Steals AI Model Spotlight",
+        "summary": "Meta's new Muse model has reportedly outshone recent releases from OpenAI (GPT-6) and Anthropic (Opus 5.5) this week.",
+        "so_what": "This intensifies competition at the foundation model layer, demonstrating Meta's growing prowess and challenging established leaders.",
+        "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+        "source": "AI News & Artificial Intelligence | Tech"
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 7,
+        "title": "CUDA to MLX: Optimizing for Apple Silicon",
+        "summary": "New research translates CUDA optimization expertise to Apple's MLX framework, enhancing AI performance on Apple Silicon.",
+        "so_what": "This development strengthens Apple's AI ecosystem, potentially reducing reliance on NVIDIA's CUDA and diversifying hardware options for developers.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
