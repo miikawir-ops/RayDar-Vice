@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-09-13",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 9,
-        "title": "OpenAI's Breakthrough in Mathematics",
-        "summary": "OpenAI claims its agents have solved a major open problem in mathematics, signaling a significant advance in reasoning.",
-        "so_what": "This breakthrough could fundamentally enhance AI's problem-solving across scientific and engineering domains, boosting OpenAI's leadership.",
-        "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      }
-    ]
-  },
-  {
     "date": "2026-09-14",
     "items": [
       {
@@ -334,6 +319,21 @@
         "so_what": "This development strengthens Apple's AI ecosystem, potentially reducing reliance on NVIDIA's CUDA and diversifying hardware options for developers.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Nearly Free",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x in a year, making advanced AI capabilities dramatically more accessible.",
+        "so_what": "This massive cost reduction fundamentally reshapes the AI economy, enabling widespread adoption and new business models.",
+        "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+        "source": "AI News & Artificial Intelligence | Tech"
       }
     ]
   }
