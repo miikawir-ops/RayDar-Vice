@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-09-14",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "OpenAI agents claim to solve major open math problem",
-        "summary": "OpenAI claims its AI agents have solved a significant open problem in mathematics, indicating a major leap in reasoning capabilities.",
-        "so_what": "This pushes the frontier of AI reasoning, potentially accelerating development of more capable and reliable foundation models.",
-        "url": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-15",
     "items": [
       {
@@ -334,6 +319,21 @@
         "so_what": "This massive cost reduction fundamentally reshapes the AI economy, enabling widespread adoption and new business models.",
         "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
         "source": "AI News & Artificial Intelligence | Tech"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "items": [
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "K-Search bridges CUDA expertise to Apple Silicon's MLX",
+        "summary": "New methods allow translating decades of CUDA optimization knowledge to Apple Silicon's MLX, boosting alternative hardware adoption.",
+        "so_what": "This directly challenges NVIDIA's ecosystem dominance by enabling efficient AI workload migration to non-NVIDIA hardware like Apple Silicon.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
   }
