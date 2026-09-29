@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-09-15",
-    "items": [
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 8,
-        "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-        "summary": "HydraFusion achieves frontier quality with multi-model orchestration, reducing costs and now available in GitHub Copilot.",
-        "so_what": "This innovation in developer tools enables cost-efficient high-quality AI solutions, impacting MLOps and application development strategies.",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "source": "The latest on AI & ML - The GitHub Blog"
-      },
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 7,
-        "title": "Powering AI is an architecture problem",
-        "summary": "Frequent power grid failures in major data center hubs highlight critical infrastructure challenges for scaling AI compute.",
-        "so_what": "Energy constraints will increasingly dictate hyperscaler expansion and chip design, shifting competitive advantage towards power-efficient solutions.",
-        "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-16",
     "items": []
   },
@@ -333,6 +308,21 @@
         "summary": "New methods allow translating decades of CUDA optimization knowledge to Apple Silicon's MLX, boosting alternative hardware adoption.",
         "so_what": "This directly challenges NVIDIA's ecosystem dominance by enabling efficient AI workload migration to non-NVIDIA hardware like Apple Silicon.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x to 900x, making advanced AI dramatically more affordable.",
+        "so_what": "This fundamental shift in compute economics enables new AI applications and business models across all layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
