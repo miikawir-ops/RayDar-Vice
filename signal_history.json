@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-16",
-    "items": []
-  },
-  {
     "date": "2026-09-17",
     "items": [
       {
@@ -323,6 +319,31 @@
         "summary": "Inference prices for GPT-4 class capabilities have fallen 9x to 900x, making advanced AI dramatically more affordable.",
         "so_what": "This fundamental shift in compute economics enables new AI applications and business models across all layers.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet",
+        "summary": "The cost of running GPT-4 class AI models has fallen by 9x to 900x, making advanced intelligence vastly more accessible.",
+        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new business models and widespread application deployments.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 7,
+        "title": "Optimizing AI for Apple Silicon",
+        "summary": "New methods translate CUDA optimization expertise to Apple's MLX, enhancing AI workload performance on Apple Silicon.",
+        "so_what": "This improves developer experience and performance on non-NVIDIA hardware, fostering competition in the CHIPS layer.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
