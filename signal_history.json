@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-17",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "OpenAI funds new biology data for AI models",
-        "summary": "OpenAI is acquiring unique biological data from failed biotech firms to train specialized AI models.",
-        "so_what": "This strategic data acquisition could give OpenAI a significant edge in developing advanced biotech/medical AI models.",
-        "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
-        "source": "MIT Technology Review"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 8,
-        "title": "HydraFusion boosts AI quality via multi-model orchestration",
-        "summary": "Project HydraFusion achieves frontier quality and cost reduction via multi-model orchestration, now in GitHub Copilot.",
-        "so_what": "This advancement in model orchestration significantly improves developer tooling efficiency and AI-assisted coding quality.",
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-        "source": "The latest on AI & ML - The GitHub Blog"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 7,
-        "title": "AI boom faces materials challenge",
-        "summary": "The AI boom pushes computing to physical limits, making advanced materials as crucial as algorithms for infrastructure.",
-        "so_what": "New material science innovations will be critical for future performance gains in semiconductors and data centers.",
-        "url": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-09-18",
     "items": [
       {
@@ -347,5 +312,9 @@
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
+  },
+  {
+    "date": "2026-10-01",
+    "items": []
   }
 ]
