@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-19",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
-        "summary": "GPT-4 class inference costs have fallen 9x-900x, fundamentally reshaping AI economics and deployment strategies.",
-        "so_what": "This dramatic cost reduction shifts value up the AI stack, enabling new applications and intensifying competition in cloud compute.",
-        "url": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 8,
-        "title": "K-Search Bridges CUDA Expertise to Apple Silicon's MLX",
-        "summary": "New methods translate CUDA optimization knowledge to MLX, enabling efficient AI development on Apple Silicon.",
-        "so_what": "This reduces reliance on NVIDIA's ecosystem, fostering hardware diversity and competitive alternatives in the CHIPS and TOOLS layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "Adaptive Parallel Reasoning for Efficient LLM Inference",
-        "summary": "Models can now intelligently decompose and parallelize subtasks, boosting efficiency for complex reasoning.",
-        "so_what": "This advancement improves LLM performance and cost-effectiveness, enabling more sophisticated AI applications and agentic systems.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-20",
     "items": [
       {
@@ -303,6 +268,41 @@
         "summary": "K-Search translates CUDA optimization knowledge to Apple's MLX, enabling efficient AI workloads on diverse hardware beyond NVIDIA.",
         "so_what": "This development directly challenges NVIDIA's CUDA lock-in, opening the CHIPS layer to more diverse hardware and fostering competition.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Affordable",
+        "summary": "GPT-4 class inference costs dropped 9x-900x, fundamentally reshaping AI economics and accessibility.",
+        "so_what": "This democratizes advanced AI, enabling new applications and intensifying competition in cloud and model pricing.",
+        "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+        "source": "AI News & Artificial Intelligence | Tech"
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 8,
+        "title": "Bridging CUDA to MLX: Optimizing AI on Apple Silicon",
+        "summary": "K-Search translates CUDA optimization expertise to Apple's MLX, boosting performance on Apple Silicon.",
+        "so_what": "Strengthens Apple's AI hardware ecosystem, challenging NVIDIA's CUDA dominance by making MLX more competitive.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 8,
+        "title": "Adaptive Parallel Reasoning: Efficient Inference Scaling Breakthrough",
+        "summary": "New paradigm enables models to intelligently parallelize subtasks, dramatically improving inference efficiency.",
+        "so_what": "This will significantly cut inference costs and latency for complex reasoning, making advanced AI applications viable.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
