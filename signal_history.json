@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-09-20",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Intelligence is Free, Now What?",
-        "summary": "AI inference costs have plummeted 9x-900x, making advanced capabilities widely accessible and enabling new applications.",
-        "so_what": "This massive cost reduction fundamentally reshapes AI economics, lowering barriers for new AI products and services.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 7,
-        "title": "From CUDA to MLX: Kernel Expertise for Apple Silicon",
-        "summary": "Translating CUDA optimization knowledge to Apple's MLX framework boosts Apple Silicon's AI hardware capabilities.",
-        "so_what": "This strengthens Apple's competitive position in AI hardware, offering a viable alternative to NVIDIA's ecosystem.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-21",
     "items": []
   },
@@ -303,6 +278,41 @@
         "summary": "New paradigm enables models to intelligently parallelize subtasks, dramatically improving inference efficiency.",
         "so_what": "This will significantly cut inference costs and latency for complex reasoning, making advanced AI applications viable.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Intelligence is Free, Now What?",
+        "summary": "Inference costs for GPT-4 class models have plummeted by 9x-900x, fundamentally changing AI economics.",
+        "so_what": "This dramatic cost reduction democratizes AI access, enables new applications, and shifts competitive dynamics across the value chain.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "From CUDA to MLX: Kernel Expertise to Apple Silicon",
+        "summary": "New methods translate CUDA optimization knowledge to Apple Silicon's MLX, enabling diverse hardware use.",
+        "so_what": "This reduces NVIDIA's ecosystem lock-in, making alternative hardware like Apple Silicon more viable for high-performance AI workloads.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+        "summary": "ABBEL allows LLMs to use concise 'beliefs' instead of full history, improving efficiency for long-horizon tasks.",
+        "so_what": "This significantly extends LLM context capabilities and reduces inference costs for complex, multi-turn interactions and agents.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
