@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-21",
-    "items": []
-  },
-  {
     "date": "2026-09-22",
     "items": [
       {
@@ -313,6 +309,41 @@
         "summary": "ABBEL allows LLMs to use concise 'beliefs' instead of full history, improving efficiency for long-horizon tasks.",
         "so_what": "This significantly extends LLM context capabilities and reduces inference costs for complex, multi-turn interactions and agents.",
         "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
+        "summary": "The cost of GPT-4 class inference has fallen by 9x-900x, fundamentally changing AI economics and accessibility.",
+        "so_what": "This democratizes advanced AI, shifts competitive focus from raw compute to data systems, and pressures cloud providers.",
+        "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+        "source": "AI News & Artificial Intelligence | Tech"
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 8,
+        "title": "K-Search Bridges CUDA Expertise to Apple Silicon via MLX",
+        "summary": "K-Search translates CUDA optimization knowledge to MLX, enabling efficient AI workloads on Apple Silicon.",
+        "so_what": "This reduces NVIDIA's CUDA lock-in, making Apple Silicon a more viable AI hardware platform and fostering competition.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 8,
+        "title": "Adaptive Parallel Reasoning: New Paradigm for Efficient LLM Inference",
+        "summary": "A new approach allows reasoning models to self-decompose and parallelize tasks for efficient inference scaling.",
+        "so_what": "This significantly boosts LLM inference efficiency for complex reasoning, enabling more sophisticated and cost-effective AI agents.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
