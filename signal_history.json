@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-09-23",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Inference costs plummet, enabling new agentic data systems",
-        "summary": "GPT-4 class inference costs have fallen 9x-900x, making intelligence nearly free and prompting new data system designs for agents.",
-        "so_what": "This massive cost reduction fundamentally shifts the economics of AI, driving innovation in agentic applications and pressing cloud compute pricing.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "K-Search bridges CUDA expertise to Apple Silicon MLX",
-        "summary": "New methods translate decades of CUDA kernel optimization knowledge to Apple Silicon's MLX, enabling efficient AI workloads.",
-        "so_what": "This reduces NVIDIA's CUDA moat, allowing alternative hardware like Apple Silicon to become more competitive for AI development.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-24",
     "items": [
       {
@@ -324,6 +299,41 @@
         "summary": "GPT-4 class AI inference costs dropped 9x-900x in a year, making intelligence nearly free.",
         "so_what": "This dramatic cost reduction fundamentally shifts AI economics, enabling widespread adoption and new business models across all layers.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: 9x-900x Price Drop",
+        "summary": "GPT-4 class inference costs have fallen dramatically, making advanced AI capabilities far more accessible and affordable.",
+        "so_what": "This fundamental shift in compute economics enables new AI applications and puts pressure on cloud providers to optimize.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 7,
+        "title": "K-Search Bridges CUDA Expertise to Apple Silicon MLX",
+        "summary": "New methods translate CUDA optimization knowledge to Apple Silicon's MLX, enabling efficient AI workloads on diverse hardware.",
+        "so_what": "This reduces NVIDIA's ecosystem lock-in, making non-NVIDIA hardware more viable for AI development and deployment.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "ABBEL: Efficient LLM Long-Horizon Interaction via Beliefs",
+        "summary": "A new method, ABBEL, allows LLMs to update beliefs instead of full history, enabling efficient long-horizon interaction.",
+        "so_what": "This significantly improves LLM practical applicability for complex, multi-step tasks by overcoming context window limits.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
