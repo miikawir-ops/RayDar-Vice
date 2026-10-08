@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-09-24",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes Commodity",
-        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making advanced AI dramatically cheaper.",
-        "so_what": "This fundamental shift enables new applications and business models, increasing demand across the entire AI value chain.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-25",
     "items": [
       {
@@ -334,6 +319,21 @@
         "summary": "A new method, ABBEL, allows LLMs to update beliefs instead of full history, enabling efficient long-horizon interaction.",
         "so_what": "This significantly improves LLM practical applicability for complex, multi-step tasks by overcoming context window limits.",
         "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet",
+        "summary": "GPT-4 class AI inference costs have fallen 9x-900x, making advanced AI capabilities widely accessible and enabling new use cases.",
+        "so_what": "This economic shift lowers barriers, enabling widespread AI application deployments and new business models across the value chain.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
