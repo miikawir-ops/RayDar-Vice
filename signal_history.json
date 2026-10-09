@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-25",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Intelligence is Free, Now What?",
-        "summary": "Inference costs for GPT-4 class capabilities have plummeted 9x-900x, making AI significantly more affordable.",
-        "so_what": "This massive cost reduction fundamentally alters AI economics, enabling widespread application adoption and impacting cloud compute pricing.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "From CUDA to MLX: Kernel Expertise for Apple Silicon",
-        "summary": "New methods translate CUDA optimization knowledge to MLX, enabling efficient AI workloads on Apple Silicon.",
-        "so_what": "This development challenges NVIDIA's CUDA dominance by optimizing software for alternative hardware, fostering competition in the chips layer.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 7,
-        "title": "Adaptive Parallel Reasoning: Efficient Inference Scaling",
-        "summary": "A new paradigm allows reasoning models to autonomously decompose, parallelize, and coordinate subtasks for efficiency.",
-        "so_what": "This significantly improves the scalability and cost-effectiveness of complex LLM reasoning, making advanced agentic systems practical.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-26",
     "items": [
       {
@@ -337,5 +302,9 @@
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
+  },
+  {
+    "date": "2026-10-09",
+    "items": []
   }
 ]
