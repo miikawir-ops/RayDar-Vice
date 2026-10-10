@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-09-26",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummeting",
-        "summary": "The cost of AI inference has fallen dramatically, with GPT-4 class capabilities now costing less than $1 per million tokens.",
-        "so_what": "This profound reduction in compute costs democratizes AI, enabling widespread deployment and unlocking new business models across all layers.",
-        "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "Meta's Muse Steals AI Model Spotlight",
-        "summary": "Meta's new Muse model has reportedly outshone recent releases from OpenAI (GPT-6) and Anthropic (Opus 5.5) this week.",
-        "so_what": "This intensifies competition at the foundation model layer, demonstrating Meta's growing prowess and challenging established leaders.",
-        "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 7,
-        "title": "CUDA to MLX: Optimizing for Apple Silicon",
-        "summary": "New research translates CUDA optimization expertise to Apple's MLX framework, enhancing AI performance on Apple Silicon.",
-        "so_what": "This development strengthens Apple's AI ecosystem, potentially reducing reliance on NVIDIA's CUDA and diversifying hardware options for developers.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-27",
     "items": [
       {
@@ -306,5 +271,20 @@
   {
     "date": "2026-10-09",
     "items": []
+  },
+  {
+    "date": "2026-10-10",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Free",
+        "summary": "The cost of GPT-4 class AI inference has fallen dramatically, from $30/million tokens to under $1, making AI far more accessible.",
+        "so_what": "This fundamental shift in AI economics unlocks widespread application development and deployment, accelerating AI adoption across all layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
   }
 ]
