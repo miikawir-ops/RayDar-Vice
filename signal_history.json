@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-09-27",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes Nearly Free",
-        "summary": "GPT-4 class inference costs have fallen 9x-900x in a year, making advanced AI capabilities dramatically more accessible.",
-        "so_what": "This massive cost reduction fundamentally reshapes the AI economy, enabling widespread adoption and new business models.",
-        "url": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
-        "source": "AI News & Artificial Intelligence | Tech"
-      }
-    ]
-  },
-  {
     "date": "2026-09-28",
     "items": [
       {
@@ -284,6 +269,41 @@
         "so_what": "This fundamental shift in AI economics unlocks widespread application development and deployment, accelerating AI adoption across all layers.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "items": [
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Accessible",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x, making advanced AI dramatically more affordable.",
+        "so_what": "This massive cost reduction unlocks new AI applications and fundamentally shifts the economics of deploying AI at scale.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "K-Search Bridges CUDA Expertise to Apple Silicon MLX",
+        "summary": "New methods translate CUDA optimization knowledge to Apple's MLX, enabling efficient AI workloads on diverse hardware.",
+        "so_what": "This reduces reliance on NVIDIA's ecosystem, fostering competition in the CHIPS layer and diversifying AI hardware options.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "Amazon Drops NDAs for Data Center Deals",
+        "summary": "Amazon, following Microsoft, will stop using NDAs for data center negotiations, addressing community backlash.",
+        "so_what": "This move aims to ease infrastructure expansion bottlenecks, directly impacting future cloud compute availability and pricing.",
+        "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+        "source": "AI News & Artificial Intelligence | Tech"
       }
     ]
   }
