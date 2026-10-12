@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-09-28",
-    "items": [
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "K-Search bridges CUDA expertise to Apple Silicon's MLX",
-        "summary": "New methods allow translating decades of CUDA optimization knowledge to Apple Silicon's MLX, boosting alternative hardware adoption.",
-        "so_what": "This directly challenges NVIDIA's ecosystem dominance by enabling efficient AI workload migration to non-NVIDIA hardware like Apple Silicon.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-09-29",
     "items": [
       {
@@ -304,6 +289,21 @@
         "so_what": "This move aims to ease infrastructure expansion bottlenecks, directly impacting future cloud compute availability and pricing.",
         "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
         "source": "AI News & Artificial Intelligence | Tech"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet, Enabling Widespread Adoption",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically more affordable.",
+        "so_what": "This fundamental economic shift accelerates AI adoption across all layers, enabling new applications and business models.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
   }
