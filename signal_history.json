@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-09-30",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet",
-        "summary": "The cost of running GPT-4 class AI models has fallen by 9x to 900x, making advanced intelligence vastly more accessible.",
-        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new business models and widespread application deployments.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 7,
-        "title": "Optimizing AI for Apple Silicon",
-        "summary": "New methods translate CUDA optimization expertise to Apple's MLX, enhancing AI workload performance on Apple Silicon.",
-        "so_what": "This improves developer experience and performance on non-NVIDIA hardware, fostering competition in the CHIPS layer.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-01",
     "items": []
   },
@@ -303,6 +278,21 @@
         "summary": "Inference costs for GPT-4 class capabilities have fallen 9x-900x in a year, fundamentally reshaping AI economics.",
         "so_what": "This dramatic price drop democratizes AI access, enabling new business models and widespread application deployments.",
         "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen by 9x to 900x in the last year, making AI far cheaper.",
+        "so_what": "This dramatic cost reduction fundamentally alters AI economics, enabling broader enterprise adoption and new application types.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
