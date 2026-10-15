@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-01",
-    "items": []
-  },
-  {
     "date": "2026-10-02",
     "items": [
       {
@@ -293,6 +289,41 @@
         "summary": "Inference prices for GPT-4 class capabilities have fallen by 9x to 900x in the last year, making AI far cheaper.",
         "so_what": "This dramatic cost reduction fundamentally alters AI economics, enabling broader enterprise adoption and new application types.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Intelligence is Free, Now What?",
+        "summary": "LLM inference costs have plummeted by 9x-900x, fundamentally reshaping AI deployment economics.",
+        "so_what": "This dramatic cost reduction makes new AI applications viable and intensifies competition in compute pricing.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "From CUDA to MLX: Kernel Expertise to Apple Silicon",
+        "summary": "New methods translate CUDA optimization knowledge to Apple's MLX, enabling efficient AI on diverse hardware.",
+        "so_what": "This challenges NVIDIA's software moat by fostering competitive, optimized AI development on alternative silicon.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "Teaching LLMs to Update Beliefs for Long-Horizon Interaction",
+        "summary": "ABBEL allows LLMs to update beliefs, replacing full history for efficient, long-horizon interactions.",
+        "so_what": "Improves LLM efficiency and scalability for complex, multi-turn tasks, expanding practical application scope.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
