@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-10-02",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
-        "summary": "AI inference costs have plummeted by 9x-900x, making advanced capabilities widely accessible and transforming economic models.",
-        "so_what": "This massive cost reduction fundamentally shifts the CLOUD compute market and enables a proliferation of new AI APPS.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "From CUDA to MLX: Kernel Expertise to Apple Silicon",
-        "summary": "K-Search translates CUDA optimization knowledge to Apple's MLX, enabling efficient AI workloads on diverse hardware beyond NVIDIA.",
-        "so_what": "This development directly challenges NVIDIA's CUDA lock-in, opening the CHIPS layer to more diverse hardware and fostering competition.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-03",
     "items": [
       {
@@ -324,6 +299,21 @@
         "summary": "ABBEL allows LLMs to update beliefs, replacing full history for efficient, long-horizon interactions.",
         "so_what": "Improves LLM efficiency and scalability for complex, multi-turn tasks, expanding practical application scope.",
         "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Now Nearly Free",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen by 9x to 900x, making advanced AI significantly more accessible.",
+        "so_what": "This fundamental shift democratizes AI access, enables new business models, and pressures cloud providers on compute pricing.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
