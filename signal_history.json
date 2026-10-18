@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-10-04",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Intelligence is Free, Now What?",
-        "summary": "Inference costs for GPT-4 class models have plummeted by 9x-900x, fundamentally changing AI economics.",
-        "so_what": "This dramatic cost reduction democratizes AI access, enables new applications, and shifts competitive dynamics across the value chain.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "From CUDA to MLX: Kernel Expertise to Apple Silicon",
-        "summary": "New methods translate CUDA optimization knowledge to Apple Silicon's MLX, enabling diverse hardware use.",
-        "so_what": "This reduces NVIDIA's ecosystem lock-in, making alternative hardware like Apple Silicon more viable for high-performance AI workloads.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 7,
-        "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
-        "summary": "ABBEL allows LLMs to use concise 'beliefs' instead of full history, improving efficiency for long-horizon tasks.",
-        "so_what": "This significantly extends LLM context capabilities and reduces inference costs for complex, multi-turn interactions and agents.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-05",
     "items": [
       {
@@ -293,6 +258,41 @@
         "title": "AI Inference Costs Plummet: Intelligence is Free",
         "summary": "GPT-4 class inference costs have fallen 9x-900x in a year, democratizing access and enabling new AI applications at scale.",
         "so_what": "This dramatic cost reduction reshapes compute economics, driving innovation across all AI value chain layers and accelerating adoption.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "items": [
+      {
+        "chain_layer": "CLOUD|MODELS|APPS",
+        "chain_tag": "models",
+        "score": 9,
+        "title": "AI Inference Costs Plummeting",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically cheaper.",
+        "so_what": "This fundamental shift lowers barriers to entry, enabling new business models and widespread AI adoption across all layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS|TOOLS",
+        "chain_tag": "models",
+        "score": 8,
+        "title": "K-Search Bridges CUDA Expertise to Apple MLX",
+        "summary": "New methods translate NVIDIA CUDA optimization knowledge to Apple Silicon's MLX, boosting Apple's AI hardware viability.",
+        "so_what": "This challenges NVIDIA's software moat, diversifying the hardware landscape for AI development beyond CUDA dominance.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "New RL Paradigm: Divide and Conquer",
+        "summary": "A novel reinforcement learning algorithm based on divide and conquer scales well to long-horizon tasks, unlike TD learning.",
+        "so_what": "This algorithmic shift could unlock new capabilities for AI agents and robotics, enabling more complex and robust behaviors.",
         "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
