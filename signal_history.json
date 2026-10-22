@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-08",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet",
-        "summary": "GPT-4 class AI inference costs have fallen 9x-900x, making advanced AI capabilities widely accessible and enabling new use cases.",
-        "so_what": "This economic shift lowers barriers, enabling widespread AI application deployments and new business models across the value chain.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-09",
     "items": []
   },
@@ -267,5 +252,9 @@
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
+  },
+  {
+    "date": "2026-10-22",
+    "items": []
   }
 ]
