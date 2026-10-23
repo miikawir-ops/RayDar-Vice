@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-09",
-    "items": []
-  },
-  {
     "date": "2026-10-10",
     "items": [
       {
@@ -256,5 +252,20 @@
   {
     "date": "2026-10-22",
     "items": []
+  },
+  {
+    "date": "2026-10-23",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Reshaping the Economics of Intelligence",
+        "summary": "The cost of GPT-4 class inference has fallen dramatically, from $30/M tokens to under $1, enabling widespread AI adoption.",
+        "so_what": "This massive cost reduction fundamentally alters AI deployment economics, making advanced intelligence accessible and driving new applications.",
+        "url": "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/",
+        "source": "MIT Technology Review"
+      }
+    ]
   }
 ]
