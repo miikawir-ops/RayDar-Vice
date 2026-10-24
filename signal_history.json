@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-10",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes Free",
-        "summary": "The cost of GPT-4 class AI inference has fallen dramatically, from $30/million tokens to under $1, making AI far more accessible.",
-        "so_what": "This fundamental shift in AI economics unlocks widespread application development and deployment, accelerating AI adoption across all layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-11",
     "items": [
       {
@@ -265,6 +250,41 @@
         "so_what": "This massive cost reduction fundamentally alters AI deployment economics, making advanced intelligence accessible and driving new applications.",
         "url": "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/",
         "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Accessible",
+        "summary": "GPT-4 class inference costs have dropped by 9x to 900x, making advanced AI capabilities dramatically more affordable.",
+        "so_what": "This fundamental shift in AI economics unlocks new applications and intensifies competition across the CLOUD and APPS layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "TOOLS",
+        "chain_tag": "tools",
+        "score": 8,
+        "title": "CUDA to MLX: Bridging Kernel Expertise for Apple Silicon",
+        "summary": "New methods translate CUDA optimization knowledge to Apple's MLX, crucial for diverse AI hardware architectures.",
+        "so_what": "This strengthens Apple's AI ecosystem, enabling competitive performance on its custom silicon and challenging NVIDIA's software dominance.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "Efficient LLM Interaction: Belief Updates for Long Contexts",
+        "summary": "ABBEL enables LLMs to efficiently manage long-horizon interactions by updating beliefs instead of full context history.",
+        "so_what": "This significantly improves LLM scalability and performance for complex, multi-step tasks, reducing inference costs and expanding use cases.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
   }
