@@ -1,4 +1,0 @@
-# Curated site build (published to the public site repo, never committed here)
-_site/
-__pycache__/
-.env
