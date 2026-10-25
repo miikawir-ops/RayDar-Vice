@@ -260,10 +260,10 @@
         "chain_layer": "CLOUD",
         "chain_tag": "cloud",
         "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence is Free, Now What?",
-        "summary": "LLM inference costs have fallen 9x-900x in a year, fundamentally reshaping AI economics and enabling new applications.",
-        "so_what": "This dramatic cost reduction intensifies competition in cloud compute and unlocks a vast array of previously uneconomical AI applications.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making advanced AI dramatically cheaper.",
+        "so_what": "This fundamental shift in cost democratizes AI access, enabling new business models and applications across all layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
