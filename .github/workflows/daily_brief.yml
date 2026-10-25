@@ -6,7 +6,14 @@ on:
   workflow_dispatch:
  
 permissions:
-  contents: write
+  contents: write   # the commit-back of the daily brief
+  pages: write      # actions/deploy-pages
+  id-token: write   # actions/deploy-pages (OIDC)
+
+# One run at a time, so two runs can't interleave their commit-backs or deploys.
+concurrency:
+  group: pages
+  cancel-in-progress: false
  
 jobs:
   generate:
@@ -34,8 +41,33 @@ jobs:
  
       - name: Commit & push report
         run: |
-          git config user.name  "RayDar Vice Bot"
-          git config user.email "red@nicks-pizza-espoo"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add raydar_vice.html seen_hashes.json signal_history.json
           git diff --staged --quiet || git commit -m "Daily brief — $(date +'%Y-%m-%d')"
           git push
+
+      # Curated Pages output (2026-10-25): only the pages are published, paths
+      # preserved. Code, templates and the JSON state files stay in the repo
+      # but are no longer served. Pages source must be "GitHub Actions".
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp index.html raydar_vice.html quantum.html _site/
+          test -f _site/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
