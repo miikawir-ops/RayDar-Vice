@@ -249,30 +249,10 @@
         "chain_layer": "CLOUD",
         "chain_tag": "cloud",
         "score": 9,
-        "title": "LLM Inference Costs Plummet: Intelligence Becomes Nearly Free",
-        "summary": "LLM inference prices have fallen 9x-900x, making advanced AI capabilities dramatically more accessible and affordable.",
-        "so_what": "This massive cost reduction fundamentally reshapes the economics of AI deployment, accelerating agentic system adoption and enabling new applications.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 8,
-        "title": "K-Search Bridges CUDA Expertise to Apple Silicon's MLX Framework",
-        "summary": "New methods translate CUDA optimization knowledge to Apple's MLX, enabling efficient AI workloads on Apple Silicon.",
-        "so_what": "This development challenges NVIDIA's CUDA moat, making alternative hardware like Apple Silicon more viable for AI and diversifying the chip ecosystem.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 7,
-        "title": "LLMs Learn to Update Beliefs for Efficient Long-Horizon Interaction",
-        "summary": "A new method (ABBEL) allows LLMs to update beliefs instead of full context, improving efficiency for long-horizon tasks.",
-        "so_what": "This innovation enhances LLM scalability and performance for complex, multi-step agentic tasks, expanding their practical application range.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
+        "summary": "AI inference costs have plummeted by 9x to 900x in the last year, making GPT-4 class capabilities vastly more affordable.",
+        "so_what": "This dramatic cost reduction fundamentally shifts AI economics, enabling widespread adoption and new business models across all layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
