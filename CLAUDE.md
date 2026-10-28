@@ -16,6 +16,7 @@ Sibling of the canonical RayDar repo (AI_valuechain); its working rules apply he
   Siblings: https://raydar.fi/ and https://datacenter.raydar.fi/; link them by
   these domains. The TP_special_agent link stays on github.io.
 - Before a domain or hosting cutover, probe only throwaway paths over http (e.g. /probe-123.html), never / or real pages: GitHub's CDN caches the pre-cutover 404 for an unknown time.
+- Mirror (planned 2026-10-28): https://miikawir-ops.github.io/raydar-mirror/ serves copies of all three sites (/, /datacenter/, /vice/) for networks that block raydar.fi; it is built by the raydar-mirror repo's own workflow, which pulls the live sites, so nothing here changes for it. While it exists, never create a miikawir-ops.github.io account-level repo with a custom domain: GitHub would then redirect every project site without its own domain, the mirror included, to that domain.
 - A new page is published only by adding it to the "Prepare Pages artifact" step.
   After any deploy, check the root and the page you changed.
 - index.html must stay in the published set so the bare URL resolves; the daily
