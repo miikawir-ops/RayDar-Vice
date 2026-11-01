@@ -1,40 +1,5 @@
 [
   {
-    "date": "2026-10-18",
-    "items": [
-      {
-        "chain_layer": "CLOUD|MODELS|APPS",
-        "chain_tag": "models",
-        "score": 9,
-        "title": "AI Inference Costs Plummeting",
-        "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically cheaper.",
-        "so_what": "This fundamental shift lowers barriers to entry, enabling new business models and widespread AI adoption across all layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "CHIPS|TOOLS",
-        "chain_tag": "models",
-        "score": 8,
-        "title": "K-Search Bridges CUDA Expertise to Apple MLX",
-        "summary": "New methods translate NVIDIA CUDA optimization knowledge to Apple Silicon's MLX, boosting Apple's AI hardware viability.",
-        "so_what": "This challenges NVIDIA's software moat, diversifying the hardware landscape for AI development beyond CUDA dominance.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 7,
-        "title": "New RL Paradigm: Divide and Conquer",
-        "summary": "A novel reinforcement learning algorithm based on divide and conquer scales well to long-horizon tasks, unlike TD learning.",
-        "so_what": "This algorithmic shift could unlock new capabilities for AI agents and robotics, enabling more complex and robust behaviors.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-19",
     "items": [
       {
@@ -233,6 +198,21 @@
         "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically more accessible and affordable.",
         "so_what": "This democratizes access to powerful AI, enabling a new wave of cost-effective applications and reshaping cloud compute economics.",
         "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: 'Intelligence is Free'",
+        "summary": "AI inference costs have fallen 9x-900x in a year, making advanced LLM capabilities nearly free.",
+        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new applications and business models across the value chain.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
