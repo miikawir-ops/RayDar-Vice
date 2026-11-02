@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-19",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Intelligence is Free, Now What?",
-        "summary": "The cost of GPT-4 class AI capabilities has fallen 9x-900x, fundamentally reshaping AI economics.",
-        "so_what": "This commoditizes basic AI, shifting value to data, integration, and application design across the value chain.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-20",
     "items": [
       {
@@ -213,6 +198,21 @@
         "summary": "AI inference costs have fallen 9x-900x in a year, making advanced LLM capabilities nearly free.",
         "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new applications and business models across the value chain.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "items": [
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 9,
+        "title": "LLMs Learn to Update Beliefs for Efficient Long-Horizon Interaction",
+        "summary": "A new method (ABBEL) allows LLMs to manage long interactions efficiently by updating beliefs, bypassing context window limits.",
+        "so_what": "This significantly improves LLM performance and cost-efficiency for complex, multi-turn tasks, enabling more capable AI agents.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
