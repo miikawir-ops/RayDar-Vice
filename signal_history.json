@@ -1,30 +1,5 @@
 [
   {
-    "date": "2026-10-21",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummeting",
-        "summary": "The cost of GPT-4 class AI inference has fallen by 9x to 900x in a year, making advanced AI capabilities dramatically more accessible.",
-        "so_what": "This fundamental economic shift democratizes AI, enabling new applications and intensifying competition across cloud providers and model developers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      },
-      {
-        "chain_layer": "TOOLS",
-        "chain_tag": "tools",
-        "score": 7,
-        "title": "Optimizing AI Workloads for Apple Silicon",
-        "summary": "New methods translate CUDA optimization expertise to Apple's MLX framework, improving AI performance on Apple Silicon.",
-        "so_what": "This development reduces NVIDIA's CUDA lock-in, fostering hardware diversity and increasing competitive pressure in the chips and tools layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-22",
     "items": []
   },
@@ -205,5 +180,40 @@
   {
     "date": "2026-11-03",
     "items": []
+  },
+  {
+    "date": "2026-11-04",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Intelligence is Free: Data Systems for Agents",
+        "summary": "LLM inference costs have plummeted up to 900x, shifting focus to data systems for and by AI agents.",
+        "so_what": "This drastic cost reduction fundamentally alters AI economics, enabling new agentic applications and shifting value to data infrastructure.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "CUDA to MLX: K-Search enables Apple Silicon AI",
+        "summary": "K-Search translates CUDA optimization knowledge to MLX for Apple Silicon, enabling AI workloads on diverse hardware.",
+        "so_what": "This initiative directly challenges NVIDIA's CUDA moat, potentially diversifying AI hardware adoption beyond GPUs.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 7,
+        "title": "LLMs Update Beliefs for Efficient Long-Horizon Interaction",
+        "summary": "A new method, ABBEL, allows LLMs to update beliefs instead of full history, improving long-horizon interaction efficiency.",
+        "so_what": "This enhances LLM agent capabilities, making complex, multi-step AI applications more practical and cost-effective.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
   }
 ]
