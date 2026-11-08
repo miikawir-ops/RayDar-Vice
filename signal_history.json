@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-25",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
-        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making advanced AI dramatically cheaper.",
-        "so_what": "This fundamental shift in cost democratizes AI access, enabling new business models and applications across all layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-26",
     "items": [
       {
@@ -204,6 +189,21 @@
         "so_what": "This drastic cost reduction redefines AI economics, enabling widespread adoption and new business models across all application layers.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: New Era for Apps",
+        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making AI dramatically more accessible and cheaper.",
+        "so_what": "This fundamental economic shift unlocks new business models and widespread enterprise AI deployments, refocusing value on data systems.",
+        "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+        "source": "MIT Technology Review"
       }
     ]
   }
