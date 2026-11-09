@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-26",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet, Enabling New Applications",
-        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x, making AI significantly more accessible and affordable.",
-        "so_what": "This dramatic cost reduction fundamentally shifts the economics of AI, enabling widespread adoption and new business models across the CLOUD and APPS layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-27",
     "items": []
   },
@@ -204,6 +189,21 @@
         "so_what": "This fundamental economic shift unlocks new business models and widespread enterprise AI deployments, refocusing value on data systems.",
         "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
         "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
+        "summary": "The cost of AI inference has fallen by 9x to 900x in a year, making advanced AI capabilities dramatically more accessible.",
+        "so_what": "This fundamental economic shift redefines compute pricing and unlocks a vast array of new, cost-effective AI applications.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
   }
