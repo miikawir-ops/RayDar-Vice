@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-27",
-    "items": []
-  },
-  {
     "date": "2026-10-28",
     "items": [
       {
@@ -203,6 +199,31 @@
         "summary": "The cost of AI inference has fallen by 9x to 900x in a year, making advanced AI capabilities dramatically more accessible.",
         "so_what": "This fundamental economic shift redefines compute pricing and unlocks a vast array of new, cost-effective AI applications.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "items": [
+      {
+        "chain_layer": "MODELS",
+        "chain_tag": "models",
+        "score": 9,
+        "title": "LLM Inference Costs Plummet, Reshaping AI Economics",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities nearly free.",
+        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, unlocking widespread agentic AI applications and business models.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "K-Search Bridges CUDA Expertise to Apple Silicon with MLX",
+        "summary": "K-Search translates CUDA optimization knowledge to MLX, significantly boosting Apple Silicon's AI performance and developer appeal.",
+        "so_what": "This strengthens Apple's position in AI hardware, challenging NVIDIA's software lock-in and expanding the competitive landscape.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
