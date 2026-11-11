@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-28",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
-        "summary": "AI inference costs have plummeted by 9x to 900x in the last year, making GPT-4 class capabilities vastly more affordable.",
-        "so_what": "This dramatic cost reduction fundamentally shifts AI economics, enabling widespread adoption and new business models across all layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-29",
     "items": [
       {
@@ -224,6 +209,21 @@
         "summary": "K-Search translates CUDA optimization knowledge to MLX, significantly boosting Apple Silicon's AI performance and developer appeal.",
         "so_what": "This strengthens Apple's position in AI hardware, challenging NVIDIA's software lock-in and expanding the competitive landscape.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "Intelligence is Free: AI Inference Costs Plummet",
+        "summary": "AI inference costs have dropped dramatically (9x-900x), making GPT-4 class capabilities nearly free.",
+        "so_what": "This democratizes AI, enabling new applications and fundamentally reshaping the economics of AI services.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
