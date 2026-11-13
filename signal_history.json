@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-30",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet",
-        "summary": "The cost of GPT-4 class inference has fallen by up to 900x in a year, making advanced AI capabilities dramatically more accessible.",
-        "so_what": "This massive cost reduction fundamentally reshapes the economics of AI, enabling new applications and intensifying competition across all layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-10-31",
     "items": [
       {
@@ -224,6 +209,21 @@
         "summary": "AI inference costs have fallen 9x-900x, making GPT-4 class capabilities nearly free, enabling new applications.",
         "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, accelerating enterprise adoption and enabling novel AI applications.",
         "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "LLM inference costs plummet, enabling new AI agent economics",
+        "summary": "GPT-4 class inference prices have fallen 9x-900x since early 2023, making advanced AI significantly more affordable.",
+        "so_what": "This drastic cost reduction fundamentally reshapes AI deployment economics, impacting cloud compute, model viability, and application development.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
