@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-10-31",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence is Now Free",
-        "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically more accessible and affordable.",
-        "so_what": "This democratizes access to powerful AI, enabling a new wave of cost-effective applications and reshaping cloud compute economics.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-01",
     "items": [
       {
@@ -224,6 +209,21 @@
         "summary": "GPT-4 class inference prices have fallen 9x-900x since early 2023, making advanced AI significantly more affordable.",
         "so_what": "This drastic cost reduction fundamentally reshapes AI deployment economics, impacting cloud compute, model viability, and application development.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 7,
+        "title": "Bridging CUDA to MLX for Apple Silicon",
+        "summary": "New methods translate CUDA optimization expertise to Apple's MLX, enabling efficient AI workloads on diverse hardware.",
+        "so_what": "This reduces NVIDIA's CUDA ecosystem lock-in, fostering broader adoption of alternative AI hardware platforms.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
