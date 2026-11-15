@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-01",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: 'Intelligence is Free'",
-        "summary": "AI inference costs have fallen 9x-900x in a year, making advanced LLM capabilities nearly free.",
-        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new applications and business models across the value chain.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-02",
     "items": [
       {
@@ -224,6 +209,21 @@
         "summary": "New methods translate CUDA optimization expertise to Apple's MLX, enabling efficient AI workloads on diverse hardware.",
         "so_what": "This reduces NVIDIA's CUDA ecosystem lock-in, fostering broader adoption of alternative AI hardware platforms.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "LLM Inference Costs Plummet: Intelligence Becomes Free",
+        "summary": "LLM inference prices have fallen by 9x to 900x, making advanced AI capabilities dramatically more accessible and affordable.",
+        "so_what": "This cost reduction democratizes access to powerful AI, enabling new applications and business models across all industries.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
