@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-02",
-    "items": [
-      {
-        "chain_layer": "MODELS",
-        "chain_tag": "models",
-        "score": 9,
-        "title": "LLMs Learn to Update Beliefs for Efficient Long-Horizon Interaction",
-        "summary": "A new method (ABBEL) allows LLMs to manage long interactions efficiently by updating beliefs, bypassing context window limits.",
-        "so_what": "This significantly improves LLM performance and cost-efficiency for complex, multi-turn tasks, enabling more capable AI agents.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-03",
     "items": []
   },
@@ -223,6 +208,21 @@
         "title": "LLM Inference Costs Plummet: Intelligence Becomes Free",
         "summary": "LLM inference prices have fallen by 9x to 900x, making advanced AI capabilities dramatically more accessible and affordable.",
         "so_what": "This cost reduction democratizes access to powerful AI, enabling new applications and business models across all industries.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Near-Free",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x in a year, making powerful AI capabilities widely accessible.",
+        "so_what": "This commoditization democratizes advanced AI, enabling new business models and accelerating adoption across all value chain layers.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
