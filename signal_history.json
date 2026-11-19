@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-05",
-    "items": [
-      {
-        "chain_layer": "APPS",
-        "chain_tag": "apps",
-        "score": 8,
-        "title": "AI Inference Costs Plummet: Intelligence is Free, Now What?",
-        "summary": "AI inference prices have fallen 9x-900x, making advanced capabilities accessible and enabling new business models.",
-        "so_what": "This dramatic cost reduction democratizes AI, accelerating enterprise adoption and enabling a new wave of AI-powered applications.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-06",
     "items": [
       {
@@ -218,5 +203,9 @@
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
+  },
+  {
+    "date": "2026-11-19",
+    "items": []
   }
 ]
