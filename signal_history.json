@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-06",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes Near-Free",
-        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x, making AI deployment dramatically cheaper.",
-        "so_what": "This fundamental shift in AI economics unlocks new applications and intensifies competition across the entire AI value chain.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-07",
     "items": [
       {
@@ -207,5 +192,20 @@
   {
     "date": "2026-11-19",
     "items": []
+  },
+  {
+    "date": "2026-11-20",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
+        "summary": "LLM inference prices have fallen 9x-900x, making GPT-4 class capabilities under $1 per million tokens.",
+        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new applications and business models.",
+        "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+        "source": "MIT Technology Review"
+      }
+    ]
   }
 ]
