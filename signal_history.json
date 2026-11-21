@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-07",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummeting",
-        "summary": "GPT-4 class inference costs have fallen 9x-900x in a year, now under $1 per million tokens for some providers.",
-        "so_what": "This drastic cost reduction redefines AI economics, enabling widespread adoption and new business models across all application layers.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-08",
     "items": [
       {
@@ -205,6 +190,21 @@
         "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new applications and business models.",
         "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
         "source": "MIT Technology Review"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Becomes Nearly Free",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically more accessible and affordable.",
+        "so_what": "This fundamental shift in compute economics unlocks new AI applications and intensifies competition across all value chain layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
   }
