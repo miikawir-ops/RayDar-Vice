@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-08",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 9,
-        "title": "AI Inference Costs Plummet: New Era for Apps",
-        "summary": "Inference prices for GPT-4 class capabilities have fallen 9x-900x in a year, making AI dramatically more accessible and cheaper.",
-        "so_what": "This fundamental economic shift unlocks new business models and widespread enterprise AI deployments, refocusing value on data systems.",
-        "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
-        "source": "MIT Technology Review"
-      }
-    ]
-  },
-  {
     "date": "2026-11-09",
     "items": [
       {
@@ -204,6 +189,31 @@
         "summary": "GPT-4 class inference costs have fallen 9x-900x, making advanced AI capabilities dramatically more accessible and affordable.",
         "so_what": "This fundamental shift in compute economics unlocks new AI applications and intensifies competition across all value chain layers.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence Nears Free",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x in a year, now often below $0.10 per million tokens.",
+        "so_what": "This dramatic cost reduction fundamentally shifts AI economics, enabling widespread, scalable AI applications and new business models.",
+        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "CUDA-to-MLX: Optimizing AI for Apple Silicon",
+        "summary": "K-Search translates CUDA kernel expertise to Apple's MLX framework, optimizing AI workloads for Apple Silicon.",
+        "so_what": "This strengthens Apple's AI hardware ecosystem, challenging NVIDIA's software moat and enabling efficient AI on Apple devices.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
