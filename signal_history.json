@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-09",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "AI Inference Costs Plummet: Intelligence Becomes a Commodity",
-        "summary": "The cost of AI inference has fallen by 9x to 900x in a year, making advanced AI capabilities dramatically more accessible.",
-        "so_what": "This fundamental economic shift redefines compute pricing and unlocks a vast array of new, cost-effective AI applications.",
-        "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-10",
     "items": [
       {
@@ -214,6 +199,21 @@
         "summary": "K-Search translates CUDA kernel expertise to Apple's MLX framework, optimizing AI workloads for Apple Silicon.",
         "so_what": "This strengthens Apple's AI hardware ecosystem, challenging NVIDIA's software moat and enabling efficient AI on Apple devices.",
         "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "LLM Inference Costs Plummet: Intelligence is Free",
+        "summary": "GPT-4 class inference costs have fallen 9x-900x, making AI capabilities dramatically cheaper.",
+        "so_what": "Fundamentally alters AI economics, enabling new business models and accelerating enterprise AI adoption.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
