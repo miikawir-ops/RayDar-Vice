@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-12",
-    "items": [
-      {
-        "chain_layer": "CLOUD",
-        "chain_tag": "cloud",
-        "score": 8,
-        "title": "AI Inference Costs Plummet: Intelligence is Now Free",
-        "summary": "AI inference costs have fallen 9x-900x, making GPT-4 class capabilities nearly free, enabling new applications.",
-        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, accelerating enterprise adoption and enabling novel AI applications.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-13",
     "items": [
       {
@@ -224,6 +209,31 @@
         "summary": "Models can now autonomously decompose, parallelize, and coordinate subtasks for highly efficient and scalable complex reasoning.",
         "so_what": "This fundamentally improves LLM inference efficiency and capability, enabling more complex AI applications at lower operational costs.",
         "url": "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 9,
+        "title": "AI Inference Costs Plummet: Intelligence is Becoming Free",
+        "summary": "The cost of GPT-4 class AI inference has dropped by 9x to 900x in a year, making advanced AI capabilities nearly free.",
+        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling new applications and intensifying competition across all value chain layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      },
+      {
+        "chain_layer": "CHIPS",
+        "chain_tag": "chips",
+        "score": 8,
+        "title": "From CUDA to MLX: K-Search Optimizes Apple Silicon",
+        "summary": "K-Search translates CUDA optimization expertise to Apple's MLX, enabling efficient AI workloads on diverse, non-NVIDIA hardware.",
+        "so_what": "This development fosters hardware diversity and reduces NVIDIA's CUDA lock-in, shifting competitive dynamics in CHIPS and TOOLS.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
         "source": "The Berkeley Artificial Intelligence Res"
       }
     ]
