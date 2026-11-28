@@ -1,20 +1,5 @@
 [
   {
-    "date": "2026-11-14",
-    "items": [
-      {
-        "chain_layer": "CHIPS",
-        "chain_tag": "chips",
-        "score": 7,
-        "title": "Bridging CUDA to MLX for Apple Silicon",
-        "summary": "New methods translate CUDA optimization expertise to Apple's MLX, enabling efficient AI workloads on diverse hardware.",
-        "so_what": "This reduces NVIDIA's CUDA ecosystem lock-in, fostering broader adoption of alternative AI hardware platforms.",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "source": "The Berkeley Artificial Intelligence Res"
-      }
-    ]
-  },
-  {
     "date": "2026-11-15",
     "items": [
       {
@@ -226,5 +211,20 @@
   {
     "date": "2026-11-27",
     "items": []
+  },
+  {
+    "date": "2026-11-28",
+    "items": [
+      {
+        "chain_layer": "CLOUD",
+        "chain_tag": "cloud",
+        "score": 8,
+        "title": "AI Inference Costs Plummet: Intelligence is Free",
+        "summary": "The cost of GPT-4 class AI inference has dropped by 9x-900x in a year, making advanced intelligence nearly free.",
+        "so_what": "This dramatic cost reduction fundamentally reshapes AI economics, enabling widespread adoption and new business models across all application layers.",
+        "url": "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
+        "source": "The Berkeley Artificial Intelligence Res"
+      }
+    ]
   }
 ]
